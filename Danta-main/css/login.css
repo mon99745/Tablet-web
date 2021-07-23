@@ -1,0 +1,100 @@
+@import url(/css/style.css);
+/* 
+--------------------------
+--------------------------
+--------------------------
+login.html
+--------------------------
+--------------------------
+--------------------------
+*/
+/* login.html 상단바 */
+.loginTab {
+   width: 100%;
+   height: fit-content;
+   display: inline-block;
+   margin: 10px 0 22px 0;
+   padding: 15px 25px;
+   font-size: 25px;
+   text-align:center;
+   color:white;
+   background-color:black /*rgb(52, 152, 219)*/;
+   border: 1px solid transparent;
+   border-radius: 25px;
+   font-family: 'Black Han Sans', sans-serif;
+   white-space: nowrap;
+}
+
+/* login-table css */
+#middle .login-table {
+   display: flex;
+   justify-content: center;
+   font-family:'Black Han Sans', sans-serif;
+   font-size: 20px;
+   line-height: 30px;
+   border: 1px solid white;
+   padding: 20px;
+   background-color: silver;
+   width: 70%;
+   margin-left: 120px;
+   margin-top: 5px;
+   margin-bottom: -1px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+
+
+/* login-table input css */
+#middle .login-table input {
+   width: 200px;
+   height: 30px;
+   font-size: 15px;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+/* login-table 가입하기 button css */
+.loginBtn {
+   border: 0;
+   outline: 0;
+   white-space: nowrap;
+   padding: 8px 15px;
+   background-color: skyblue;
+   width: 69.8%;
+   height: fit-content;
+   margin-left: 120px;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+
+/* login-table a링크 css */
+#middle a {
+   font-family:'Black Han Sans', sans-serif;
+   text-decoration: none;
+   color: white;
+   font-size: 20px;
+}
+
+/* 메인가기 버튼 css */
+.mainBtn {
+   float:left;
+   text-align: center;
+   width: 130px;
+   height: 60px;
+   padding:20px;
+   margin:10px 10px auto;
+   border-radius: 25px;
+   background-color: black;
+   border: 0;
+   outline: 0;
+}
+.mainBtn a{
+   text-decoration: none;
+   color: white;
+   font-family:'Black Han Sans', sans-serif;
+   font-size: 20px;
+}
+.mainBtn a:hover{
+   color: red;
+}

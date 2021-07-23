@@ -1,0 +1,234 @@
+@import url(/css/style.css);
+/* 
+--------------------------
+--------------------------
+--------------------------
+메시지
+--------------------------
+--------------------------
+--------------------------
+*/
+/* 상단바 */
+.massageTab {
+   width: 100%;
+   height: fit-content;
+   display: inline-block;
+   margin: 10px 0 22px 0;
+   padding: 15px 25px;
+   font-size: 25px;
+   text-align:center;
+   color:white;
+   background-color:black /*rgb(52, 152, 219)*/;
+   border: 1px solid transparent;
+   border-radius: 25px;
+   font-family: 'Black Han Sans', sans-serif;
+   white-space: nowrap;
+}
+/* 메인가기 버튼 css */
+.mainBtn {
+   float:left;
+   text-align: center;
+   width: 130px;
+   height: 60px;
+   padding:20px;
+   margin:10px 10px auto;
+   border-radius: 25px;
+   background-color: black;
+   border: 0;
+   outline: 0;
+}
+.mainBtn a{
+   text-decoration: none;
+   color: white;
+   font-family:'Black Han Sans', sans-serif;
+   font-size: 20px;
+}
+.mainBtn a:hover{
+   color: red;
+}
+
+
+/* */
+.sendedText {
+   width: 100%;
+   height: 194px;
+   background-color: skyblue;
+   font-family:'Black Han Sans', sans-serif;
+   font-size: 40px;
+}
+.textBox{
+   position: relative;
+   min-height: 100%;
+   margin: 0;
+   width: 100%;
+}
+.sendText {
+   font-family:'Black Han Sans', sans-serif;
+   font-size: 20px;
+   text-align: left;
+   width: 90%;
+   border: 0;
+   outline: 0;
+   height: 35px;
+}
+.textBox img {
+   float: right !important;
+   width: 80px !important;
+   height: 35px !important;
+   background-color: black;
+}
+
+/* 키보드 */
+#keyboard {
+   /* 전체적인 키보드 위치 또는 외형 */
+   position: absolute;
+   z-index: 20;
+   width: 59.9%;
+   float: unset;
+   background: whitesmoke;
+   
+ /* 상단 패딩 */
+ padding: 8px 0 0px;
+}
+
+#middle ul {list-style-type: none; width: 784px; margin: 0 auto;}
+#middle li {float: left;}
+
+.key{
+ display: block;
+ color: black !important;
+ font: bold 9pt arial !important;
+ text-decoration: none;
+ text-align: center;
+ width: 44px;
+ height: 39px;
+ margin: 5px;
+ margin-top: 2px;
+ background: #eff0f2;
+ -moz-border-radius: 4px;
+ border-radius: 4px;
+ border-top: 1px solid #f5f5f5;
+ -webkit-box-shadow: 
+   inset 0 0 25px #e8e8e8,
+   0 1px 0 #c3c3c3,
+   0 2px 0 #c9c9c9,
+   0 2px 3px #333;
+ -moz-box-shadow: 
+   inset 0 0 25px #e8e8e8,
+   0 1px 0 #c3c3c3,
+   0 2px 0 #c9c9c9,
+   0 2px 3px #333;
+ box-shadow: 
+   inset 0 0 25px #e8e8e8,
+   0 1px 0 #c3c3c3,
+   0 2px 0 #c9c9c9,
+   0 2px 3px #333;
+ text-shadow: 0px 1px 0px #f5f5f5;
+ filter: dropshadow(color=#f5f5f5, offx=0, offy=1);}
+
+.key:active, .keydown {
+ background-color: white;
+}
+ 
+.fn span {
+ display: block;
+ margin: 14px 5px 0 0;
+ text-align: right;
+ font: bold 6pt arial;
+ text-transform: uppercase;}
+#esc {
+ margin: 6px 15px 0 0;
+ font-size: 7.5pt;
+ text-transform: lowercase;}
+
+
+#numbers li a span {
+ display: block;}
+ 
+#numbers li a b {
+ margin: 3px 0 3px;
+ display: block;}
+
+#numbers li .alt b {display: block;margin: 0 0 3px;}
+
+#numbers li #delete span {
+ text-align: right;
+ margin: 23px 10px 0 0;
+ font-size: 7.5pt;
+ text-transform: lowercase;}
+ 
+#qwerty li a span {
+ display: block;
+ margin: 13px 0 0;
+ text-transform: uppercase;}
+ 
+#qwerty li #tab span {
+ text-align: left;
+ margin: 23px 0 0 10px;
+ font-size: 7.5pt;
+ text-transform: lowercase;} 
+
+#qwerty li .alt b {display: block; margin: 3px 0 0;}
+#qwerty li .alt span {margin: 2px 0 0;}
+
+
+#asdfg li a span {
+ display: block;
+ margin: 13px 0 0;
+ text-transform: uppercase;}
+
+#asdfg li .alt span {margin: 0; text-transform: lowercase;}
+#asdfg li .alt b {display: block; margin: 3px 0 0;}
+#asdfg li #caps b {
+ display: block;
+ background: #999;
+ width: 4px;
+ height: 4px;
+ border-radius: 10px;
+ margin: 9px 0 0 10px;
+ -webkit-box-shadow: inset 0 1px 0 #666;
+ -moz-box-shadow:inset 0 1px 0 #666;
+ box-shadow:inset 0 1px 0 #666;}
+#asdfg li #caps span {
+ text-align: left;
+ margin: 10px 0 0 10px;
+ font-size: 7.5pt;}
+#asdfg li #enter span {
+ text-align: right;
+ margin: 23px 10px 0 0;
+ font-size: 7.5pt;}
+
+
+#zxcvb li a span {
+ display: block;
+ margin: 13px 0 0;
+ text-transform: uppercase;}
+#zxcvb li .shiftleft span {
+ text-align: left;
+ margin: 23px 0 0 10px;
+ font-size: 7.5pt;
+ text-transform: lowercase;}
+#zxcvb li .shiftright span {
+ text-align: right;
+ margin: 23px 10px 0 0;
+ font-size: 7.5pt;
+ text-transform: lowercase;}
+#zxcvb li .alt b {display: block;margin: 4px 0 0;}
+#zxcvb li .alt span {margin: 0;}
+
+ 
+#bottomrow li {
+ display: block;
+ text-align: center;
+ margin-top: -1px;
+ margin-left: 200px;
+ font-size: 7.5pt;
+ text-transform: lowercase;}
+
+.fn {height: 26px; width: 46px;}
+#delete {width: 72px;}
+#tab {width: 72px;}
+#caps {width: 85px;}
+#enter {width: 85px;}
+.shiftleft, .shiftright {width: 112px;}
+#spacebar {height: 40px;width: 350px;}

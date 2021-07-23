@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>단타포차에 오신걸 환영합니다.</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id=tablet> 
+        <div id=left-sidebar> <!--왼쪽 사이드 레이아웃-->
+            <div id=logo> <!--단타포차 로고-->
+                <a href="main.html"><img id="logo" src="image/logo.png"></a>
+            </div>
+            <div id=left-list> <!--=왼쪽 사이드 메뉴 리스트-->
+                <nav id="side-menu">
+                    <ul>
+                        <li>
+                            <button type="button" class="sidebar">
+                                <a href="login.html">가입하기</a>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="sidebar" id="myBtn">
+                                장바구니
+                            </button>
+                            <div id="myModal" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content" onclick="">
+                                    <div class="modal-header">
+                                        <span class="close">&times;</span>
+                                        <h2>Modal Header</h2>
+                                      </div>
+                                      <div class="modal-body">
+                                        <p>Some text in the Modal Body</p>
+                                        <p>Some other text...</p>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <h3>Modal Footer</h3>
+                                      </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <button type="button" class="sidebar">
+                                <a href="massage.html">메시지</a>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="sidebar" id="trigger">
+                                호출
+                            </button>
+                            <div class="call_popup"> 
+                                <div class="call_popup-content"> 
+                          
+                                    <h1 class="call">직원이 호출 되었습니다.</h1> 
+                                      <input type="button" id="cancel" value="확인"> 
+                                </div> 
+                            </div>
+
+                    
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id=middle> <!--가운데 레이아웃-->
+            <div id="tabMenu" style= "overflow-y: scroll"> <!--상단 메뉴 리스트-->
+                
+                <input type="radio" id="tab1" name="tabs" checked>
+                <label for="tab1">탕</label>
+                <input type="radio" id="tab2" name="tabs">
+                <label for="tab2">볶음</label>
+                <input type="radio" id="tab3" name="tabs">
+                <label for="tab3">튀김</label>
+                <input type="radio" id="tab4" name="tabs">
+                <label for="tab4">주류</label>
+                <input type="radio" id="tab5" name="tabs">
+                <label for="tab5">음료</label>
+                <input type="radio" id="tab6" name="tabs">
+                <label for="tab6">과일</label>
+
+                <!-- popUp -->
+                <script src="popUp.js"></script>
+                <script src="callpopup.js"></script>
+                <!-- popup-->
+                <div id="tang" class="tabimage" style= "overflow-y: scroll"> <!--메뉴 이미지-->
+                    
+                    <h2>뜨끈한 탕 메뉴!</h2>
+                    <ul>
+                        <li><a heref="#"><img class="food" src="image/오뎅탕.jpeg"><p>오뎅탕<p>15900원</p></a></li>
+                        <li><a heref="#"><img class="food" src="image/김치찌개.jpeg"><p>김치찌개<p>15900원</p></a></li>
+                        <li><a heref="#"><img class="food" src="image/나가사키짬뽕.jpeg"><p>나가사키짬뽕<p>15900원</p></a></li>
+                        <li><a heref="#"><img class="food" src="image/곱창전골.jpeg"><p>곱창전골<p>15900원</p></a></li>
+                        <li><a heref="#"><img class="food" src="image/닭볶음탕.jpeg"><p>닭볶음탕<p>15900원</p></a></li>
+                    </ul>
+                </div>
+                <div id="stir-fry" class="tabimage">
+                    <h2>맛있는 볶음메뉴!</h2>
+                    <ul>
+                        <li><a heref="#"><img class="food" src="image/곱창볶음.jpeg"><p>곱창볶음<p>15900원</p></a></li>
+                        <li><a heref="#"><img class="food" src="image/제육볶음.jpeg"><p>제육볶음<p>15900원</p></a></li>
+                        <li><a heref="#"><img class="food" src="image/오돌뼈.jpeg"><p>오돌뼈<p>15900원</p></a></li>
+                    </ul>
+                </div>
+                <div id="fried" class="tabimage">
+                    <h2>바삭바삭 튀김메뉴!</h2>
+                    <ul>
+                    <li><a heref="#"><img class="food" src="image/감자튀김.jpeg"><p>감자튀김<p>8900원</p></a></li>
+                    <li><a heref="#"><img class="food" src="image/쥐포튀김.jpeg"><p>쥐포튀김<p>8900원</p></a></li>
+                    <li><a heref="#"><img class="food" src="image/어니언링.jpeg"><p>어니언링<p>8900원</p></a></li>
+                    </ul>
+                </div>
+                <div id="alcohol" class="tabimage" style= "overflow-y: scroll">
+                    <h2>시원한 소주 맥주!</h2>
+                    <ul>
+                    <li><a heref="#"><img class="food" src="image/처음처럼.jpeg"><p>처음처럼<p>4500원</p></a></li>
+                    <li><a heref="#"><img class="food" src="image/참이슬후레쉬.jpeg"><p>참이슬후레쉬<p>4500원</p></a></li>
+                    <li><a heref="#"><img class="food" src="image/진로.jpeg"><p>진로<p>4500원</p></a></li>
+                    <li><a heref="#"><img class="food" src="image/하이트.png"><p>하이트<p>4500원</p></a></li>
+                    <li><a heref="#"><img class="food" src="image/테라.jpeg"><p>테라<p>4500원</p></a></li>
+                    <li><a heref="#"><img class="food" src="image/카스.jpeg"><p>카스<p>4500원</p></a></li>
+                    </ul>
+                </div>
+                <div id="soda" class="tabimage">
+                    <h2>톡쏘는 탄산음료!</h2>
+                    <ul>
+                        <li><a heref="#"><img class="food" src="image/코카콜라.jpeg"><p>코카콜라<p>2000원</p></a></li>
+                        <li><a heref="#"><img class="food" src="image/환타오렌지.jpeg"><p>환타 오렌지<p>2000원</p></a></li>
+                        <li><a heref="#"><img class="food" src="image/사이다.jpeg"><p>사이다<p>2000원</p></a></li>
+                </ul>
+                </div>
+                <div id="fruit" class="tabimage">
+                    <h2>스위트한 과일!</h2>
+                    <ul>
+                         <li><a heref="#"><img class="food" src="image/모듬과일.jpeg"><p>모듬과일<p>12000원</p></a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div id=right-sidebar> <!--오른쪽 사이드 레이아웃-->
+
+        </div>
+    </div>
+</body>
+</html>
