@@ -24,6 +24,11 @@
    font-family: 'Black Han Sans', sans-serif;
    white-space: nowrap;
 }
+
+.baguniTab::-webkit-scrollbar
+{
+   display:none;
+}
 /* 메인가기 버튼 css */
 .mainBtn {
    float:left;

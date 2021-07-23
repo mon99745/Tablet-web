@@ -32,9 +32,9 @@ login.html
    font-family:'Black Han Sans', sans-serif;
    font-size: 20px;
    line-height: 30px;
-   border: 1px solid white;
+   border: 3px solid black;
    padding: 20px;
-   background-color: silver;
+   background-color: white;
    width: 70%;
    margin-left: 120px;
    margin-top: 5px;
@@ -60,8 +60,8 @@ login.html
    outline: 0;
    white-space: nowrap;
    padding: 8px 15px;
-   background-color: skyblue;
-   width: 69.8%;
+   background-color: black;
+   width: 70%;
    height: fit-content;
    margin-left: 120px;
    border-bottom-left-radius: 10px;
