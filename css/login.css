@@ -1,4 +1,7 @@
 @import url(/css/style.css);
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
 /* 
 --------------------------
 --------------------------
@@ -8,73 +11,81 @@ login.html
 --------------------------
 --------------------------
 */
-/* login.html 상단바 */
-.loginTab {
-   width: 100%;
-   height: fit-content;
-   display: inline-block;
-   margin: 10px 0 22px 0;
-   padding: 15px 25px;
-   font-size: 25px;
-   text-align:center;
-   color:white;
-   background-color:black /*rgb(52, 152, 219)*/;
-   border: 1px solid transparent;
-   border-radius: 25px;
-   font-family: 'Black Han Sans', sans-serif;
-   white-space: nowrap;
-}
+/*로그인창 상단 이미지 로고 영역 */
 
-/* login-table css */
-#middle .login-table {
-   display: flex;
-   justify-content: center;
-   font-family:'Black Han Sans', sans-serif;
-   font-size: 20px;
-   line-height: 30px;
-   border: 3px solid black;
-   padding: 20px;
-   background-color: white;
-   width: 70%;
-   margin-left: 120px;
-   margin-top: 5px;
-   margin-bottom: -1px;
-   border-top-left-radius: 10px;
-   border-top-right-radius: 10px;
-}
-
-
-/* login-table input css */
-#middle .login-table input {
+#middle img
+{
    width: 200px;
-   height: 30px;
-   font-size: 15px;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
+   height: 150px;
+   border-radius: 50%;
+}
+.middle-top
+{
+   text-align: center;
+   width:100%;
+   height: 150px;
 }
 
-/* login-table 가입하기 button css */
-.loginBtn {
-   border: 0;
+/*로그인 탭*/
+.login-page {
+   width: 360px;
+   margin: auto;
+ }
+ .form {
+   position: relative;
+   z-index: 1;
+   background: #FFFFFF;
+   max-width: 360px;
+   margin: 0 auto 100px;
+   padding: 45px;
+   text-align: center;
+   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+ }
+ .form input {
+   font-family: 'Black Han Sans', sans-serif;
    outline: 0;
-   white-space: nowrap;
-   padding: 8px 15px;
-   background-color: black;
-   width: 70%;
-   height: fit-content;
-   margin-left: 120px;
-   border-bottom-left-radius: 10px;
-   border-bottom-right-radius: 10px;
-}
-
-/* login-table a링크 css */
-#middle a {
-   font-family:'Black Han Sans', sans-serif;
+   background: #f2f2f2;
+   width: 100%;
+   border: 0;
+   margin: 0 0 15px;
+   padding: 15px;
+   box-sizing: border-box;
+   font-size: 14px;
+ }
+ .form button {
+   font-family: 'Black Han Sans', sans-serif;
+   text-transform: uppercase;
+   outline: 0;
+   background:black;
+   width: 100%;
+   border: 0;
+   padding: 15px;
+   color: #FFFFFF;
+   font-size: 14px;
+   -webkit-transition: all 0.3 ease;
+   transition: all 0.3 ease;
+   cursor: pointer;
+ }
+ .form button:hover,.form button:active,.form button:focus {
+   background: #eee;
+   color: black;
+ }
+ .form .message {
+   margin: 15px 0 0;
+   color: #b3b3b3;
+   font-size: 12px;
+ }
+ .form .message a {
+   color: blue;
    text-decoration: none;
-   color: white;
-   font-size: 20px;
-}
+ }
+ .form .register-form {
+   display: none;
+ }
+ .message a
+ {
+    text-align: right;
+ }
 
 /* 메인가기 버튼 css */
 .mainBtn {
@@ -98,3 +109,4 @@ login.html
 .mainBtn a:hover{
    color: red;
 }
+
