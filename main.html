@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-
-<!-- 이걸 설마모를리가? 닥치고 주석작성 -->
-<!-- CSS, JS 외부시트로 이동해서 작성  -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>음주 문화의 새로운 플랫폼 단다포차에 오실걸 환영합니다.</title>
-</head>
-<body>
-    
-</body>
-</html>
-=======
-<!-- 이걸 설마모를리가? 닥치고 주석작성 -->
-<!-- CSS, JS 외부시트로 이동해서 작성  -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -24,28 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>단타포차에 오신걸 환영합니다.</title>
     <link rel="stylesheet" href="css/style.css">
-    
 </head>
 <body>
-    
+    <h1> 확인 작업 중 입니다~!</h1>
     <div id=tablet> 
         <div id=left-sidebar> <!--왼쪽 사이드 레이아웃-->
             <div id=logo> <!--단타포차 로고-->
-                <a href="index.html"><img id="logo" src="image/logo.png"></a>
+                <a href="main.html"><img id="logo" src="image/logo.png"></a>
             </div>
             <div id=left-list> <!--=왼쪽 사이드 메뉴 리스트-->
                 <nav id="side-menu">
                     <ul>
                         <li>
                             <button type="button" class="sidebar">
-                                <a href="sign-up.html">회원가입</a>
+                                <a href="login.html">가입하기</a>
                             </button>
                         </li>
                         <li>
                             <button type="button" class="sidebar" id="myBtn">
                                 장바구니
                             </button>
-                            
                             <div id="myModal" class="modal">
                                 <!-- Modal content -->
                                 <div class="modal-content" onclick="">
@@ -77,8 +56,6 @@
                           
                                     <h1 class="call">직원이 호출 되었습니다.</h1> 
                                       <input type="button" id="cancel" value="확인"> 
-                                  
-
                                 </div> 
                             </div>
 
@@ -90,7 +67,7 @@
         </div>
 
         <div id=middle> <!--가운데 레이아웃-->
-            <div id="tabMenu" style= "overflow-y:scroll"> <!--상단 메뉴 리스트-->
+            <div id="tabMenu" style= "overflow-y: scroll"> <!--상단 메뉴 리스트-->
                 
                 <input type="radio" id="tab1" name="tabs" checked>
                 <label for="tab1">탕</label>
@@ -106,12 +83,12 @@
                 <label for="tab6">과일</label>
 
                 <!-- popUp -->
+                <script src="popUp.js"></script>
                 <script src="callpopup.js"></script>
-
                 <!-- popup-->
                 <div id="tang" class="tabimage" style= "overflow-y: scroll"> <!--메뉴 이미지-->
                     
-                    <h2>뜨끈뜨끈한 탕 메뉴!</h2>
+                    <h2>뜨끈한 탕 메뉴!</h2>
                     <ul>
                         <li><a heref="#"><img class="food" src="image/오뎅탕.jpeg"><p>오뎅탕<p>15900원</p></a></li>
                         <li><a heref="#"><img class="food" src="image/김치찌개.jpeg"><p>김치찌개<p>15900원</p></a></li>
@@ -164,22 +141,8 @@
             </div>
         </div>
         <div id=right-sidebar> <!--오른쪽 사이드 레이아웃-->
-            
-            <div id=right-list >
-                <ul>
-                    <li>
-                        <button type="button" id="loginBtn">  
-                            <a href=login.html>로그인</a>
-                            </button>
-                            
-                    </li>
-                </ul>
-            </div>
-        
+
         </div>
     </div>
-
-    
 </body>
 </html>
->>>>>>> Hojun

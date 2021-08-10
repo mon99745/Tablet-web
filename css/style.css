@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 30px;
+    background-color: gray;
+    
+}
+
+ul
+{
+ list-style: none;
+}
+
+#tablet{
+border:30px solid #222;
+box-sizing: content-box;
+ margin:0 auto;
+ width: 1100px;
+ height:600px;
+ border-radius: 25px;
+ background-color: white;
+}
+
+
+#left-sidebar
+{
+    width:150px;
+    height:100%;
+    float: left;
+}
+
+#middle
+{
+    float: left;
+    width:800px;
+    height:100%;
+    background-color: white;
+    margin: 0 auto;
+}
+
+
+#right-sidebar
+{
+    width:150px;
+    height:100%;
+    float:left;
+}
+
+#logo
+{
+ float:left;
+ width: 150px;
+ height: 100px;
+}
+
+.tabimage
+{
+    margin: 0 auto;
+    height:500px;
+    background-color:white;
+}
+#tang::-webkit-scrollbar
+{
+    display: none;
+}
+#tabMenu::-webkit-scrollbar
+{
+    display:none;
+}
+/* 
+--------------------------
+--------------------------
+--------------------------
+메뉴 바 
+--------------------------
+--------------------------
+--------------------------
+*/
+#tabMenu input[type="radio"]{
+    display: none;
+}
+
+#tabMenu label{
+    /*font-family: 'Poor Story', cursive;*/
+
+    width:125px;
+    height:60px;
+    display: inline-block;
+    margin: 10px 0 30px 0;
+    padding: 15px 25px;
+    font-size: 25px;
+    text-align:center;
+    color:white;
+    background-color:black /*rgb(52, 152, 219)*/;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    font-family: 'Black Han Sans', sans-serif;
+    white-space: nowrap;
+}
+
+#tabMenu label:hover{
+    color: #b00;
+    cursor: pointer;
+}
+
+#tabMenu input:checked + label{
+    color: #b00;
+    border: 1px solid #ddd;
+    background-color: #eee;
+    box-shadow: 5px 5px 5px;
+}
+
+#tabMenu h2
+{
+    font-family: 'Gugi', cursive;
+    text-align: left;
+}
+
+
+
+/* 
+--------------------------
+--------------------------
+--------------------------
+메뉴 이미지 구역
+--------------------------
+--------------------------
+--------------------------
+*/
+.tabimage{
+
+    padding:20px;
+    display:none;
+    text-align: center;
+}
+.tabimage ul li{
+    display: block;
+}
+
+.tabimage li
+{
+    float:left;
+    width:200px;
+    margin: 5px;
+    
+}
+.food{
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+.tabimage li a p{
+    display: block;
+    padding: 5px 0;
+    background-color:black;
+    line-height: 1.5;
+    font-size: 20px;
+    text-align:center;
+    color:white;
+    font-family:'Black Han Sans', sans-serif;
+}
+
+
+
+/* 탭 메뉴와 이미지 연결 하기 */
+#tab1:checked ~ #tang,
+#tab2:checked ~ #stir-fry,
+#tab3:checked ~ #fried,
+#tab4:checked ~ #alcohol,
+#tab5:checked ~ #soda,
+#tab6:checked ~ #fruit{
+    display:block;
+}
+
+/* 사이드 메뉴리스트 css */
+#side-menu ul li{
+    float:left;
+    text-align: center;
+    width: 130px;
+    height: 60px;
+    padding:20px;
+    margin:10px 10px auto;
+    border-radius: 25px;
+    background-color: black;
+}
+
+/* 사이드 버튼 css */
+.sidebar {
+    background-color: transparent;
+    font-size: 20px;
+    font-family:'Black Han Sans', sans-serif;
+    border: 0;
+    outline: 0;
+    white-space: nowrap;
+    color: white;
+}
+
+
+/* 사이드 버튼 a링크 css */
+#side-menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+#side-menu ul li a:link {
+    color: white;
+}
+#side-menu ul li a:visited{
+    color: white;
+}
+#side-menu ul li a:hover{
+    color: red;
+    cursor: pointer;
+}
+.sidebar:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+/* popUp */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 82.35%; /* Full width */
+    height: 86.5%; /* Full height */
+    float: center;
+    margin-left: 228px;
+    margin-top: -40px !important;
+    
+}
+ 
+ 
+/* Modal Content */
+.modal-content {
+    float: center;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid skyblue;
+    border-radius: 10px;
+    width: 80%;
+    height: 120%;
+    font-family: 'Black Han Sans', sans-serif;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 1s;
+    animation-name: animatetop;
+    animation-duration: 1.5s
+}
+/* Modal-header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+/* Modal-body */
+.modal-body {
+    padding: 2px 16px;
+    height: 90%;
+}
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+    height: 6%;
+}
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: -7px;
+}
+.close:hover,
+.close:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+
+/*-----------------------------------
+-----------------------------------
+-----------------------------------
+----------호출팝업---------------------
+-----------------------------------
+-----------------------------------*/
+.call{ 
+    text-align:center;
+    display: block;
+    margin: 50px auto;
+    width:100%;
+    height:50px;
+    color:black;
+} 
+#cancel { 
+    display: block;
+    position: relative;
+    width: 100%; height: 50px; 
+    margin-top:50px;
+    text-align: center; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 0.5rem; 
+    background-color: black;
+    color: white;
+} 
+#cancel:hover{ 
+    color: #b00; 
+    background-color: black; 
+    opacity: 0.9; 
+}
+
+.call_popup { 
+   display: block;
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0; 
+    visibility: hidden; 
+    transform: scale(1.1); 
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s; 
+} 
+.call_popup-content { 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: white; 
+    
+    width: 500px; 
+    height: 200px; 
+    border-radius: 0.5rem; 
+} 
+.show-modal { 
+    opacity: 1; 
+    visibility: visible; 
+    transform: scale(1.0); 
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s; 
+} 
+
+/* 오른쪽 사이드 메뉴 바!!!! */
+#loginBtn
+{
+    background-color: black;
+    width: 150px;
+    height: 80px;
+    font-family: 'Black Han Sans', sans-serif;
+    color: white;
+    font-size:25px;
+    border-radius: 50%;
+    border:1px black;
+    outline: 0;
+    white-space: nowrap;    
+}
+
+#loginBtn:hover{
+    color: red;
+    cursor: pointer;
+}
+
+#right-sidebar a
+{
+    text-decoration: none;
+    color: inherit;
+}
