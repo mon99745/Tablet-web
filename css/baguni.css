@@ -1,0 +1,241 @@
+@import url(/css/style.css);
+/* 
+--------------------------
+--------------------------
+--------------------------
+장바구니
+--------------------------
+--------------------------
+--------------------------
+*/
+/*상단바 */
+.baguniTab {
+   width: 100%;
+   height: fit-content;
+   display: inline-block;
+   margin: 10px 0 22px 0;
+   padding: 15px 25px;
+   font-size: 25px;
+   text-align:center;
+   color:white;
+   background-color:black /*rgb(52, 152, 219)*/;
+   border: 1px solid transparent;
+   border-radius: 25px;
+   font-family: 'Black Han Sans', sans-serif;
+   white-space: nowrap;
+}
+
+.baguniTab::-webkit-scrollbar
+{
+   display:none;
+}
+/* 메인가기 버튼 css */
+.mainBtn {
+   float:left;
+   text-align: center;
+   width: 130px;
+   height: 60px;
+   padding:20px;
+   margin:10px 10px auto;
+   border-radius: 25px;
+   background-color: black;
+   border: 0;
+   outline: 0;
+}
+.mainBtn a{
+   text-decoration: none;
+   color: white;
+   font-family:'Black Han Sans', sans-serif;
+   font-size: 20px;
+}
+.mainBtn a:hover{
+   color: red;
+}
+.baguniTable {
+   margin-top: 5px;
+}
+.basketdiv {
+   width: 100%;
+   border-top: 1px solid #e0e0e0;
+   float: left;
+   font-size: 0.9375em;
+   margin-bottom: 10px;
+   text-align: center;
+
+}
+.basketdiv .row.head {
+   border-bottom: 2px solid #888;
+   box-sizing: border-box;
+   background-color: #f4f4f4;
+   font-weight: 500;
+   font-family:'Black Han Sans', sans-serif;
+   font-size: 20px;
+}
+.basketdiv .data {
+   border-bottom: 1px dashed #888;
+   box-sizing: border-box;
+   cursor: pointer;
+   float: left;
+   width: 100%;
+}
+.basketdiv .data .empty{
+   text-align: center;
+   padding: 12px 0;
+}
+.basketdiv .row.head .subdiv {
+   background-color: #f4f4f4;
+}
+.basketdiv .row > .subdiv {
+   display: block;
+   float: left;
+}
+.basketdiv .row > .subdiv:nth-child(1) {
+   width: 50%;
+}
+.basketdiv .row > .subdiv:nth-child(2) {
+   width: 40%;
+}
+.basketdiv .row > .subdiv:nth-child(3) {
+   width: 10%;
+}
+
+.basketdiv .row > div > div {
+   display: block;
+   float: left;
+   text-align: center;
+   margin: 0;
+   padding: 12px 0;
+}
+.basketdiv .row.data > div > div {
+   height: 60px;
+   line-height: 60px;
+}
+.basketdiv .data .num .updown {
+   color: #0075ff;
+   font-size: 2em;
+   letter-spacing: -5px;
+}
+.basketdiv .check {
+   width: 10%;
+}
+.basketdiv .check input[type=checkbox] {
+   transform: scale(1.5);
+}
+.basketdiv .pname{
+   width: 70%;
+   padding: auto;
+}
+.basketdiv .basketprice {
+   width: 33%;
+}
+.basketdiv .num {
+   width: 33%;
+   min-width: 105px;
+}
+.basketdiv .sum {
+   width: 34%;
+   max-width: 80px;
+   color: #0000aa;
+}
+.basketdiv .point {
+   width: 50%;
+}
+
+.basketdiv .basketcmd{
+   width: 100%;
+}
+.basketdiv .data .pname {
+   text-align: center !important;
+   line-height: 3.0 !important;
+}
+.basketdiv .data .price, .basketdiv .data .sum, .basketdiv .data .point {
+   text-align: right;
+}
+.baseform > tbody > tr > td:first-child {
+   width: 100px;
+}
+.fa-arrow-alt-circle-up:before{
+   content: "⬆️";
+}
+.fa-arrow-alt-circle-down:before {
+   content: "⬇️";
+}
+
+.buttongroup {
+padding: 11px 0;
+margin: 50px 0;
+}
+.narrowbuttongroup{
+margin: 15px 0;
+}
+.buttongroup.center {
+   text-align: center;
+}
+.buttongroup input[type=text], .buttongroup input[type=password] {
+   height: 30px;
+}
+.buttongroup button, .buttongroup a {
+   margin-right: 5px;
+}
+.buttongroup button:last-child, .buttongroup a:last-child {
+   margin-right: 0;
+}
+
+.abutton, .abutton:link, .abutton:visited, .abutton:active, input[type=button] {
+   background-color: #383838;
+   border: 1px solid #888888;
+   color: #ffffff;
+   cursor: pointer;
+   letter-spacing: -1px;
+   padding: 3px 5px;
+   margin: 2px 3px;
+   width: auto;
+   word-break: keep-all;
+   border-radius: 5px;
+   text-decoration: none;
+   font-size: 0.9375em;
+}
+
+.abutton-alt {
+   background-color: #d3e2c6;
+}
+
+.basketrowcmd, .sumcount, .summoney{
+ text-align: right;
+ margin-bottom: 10px;
+ margin-top: -5px;
+ font-family: 'Black Han Sans', sans-serif;
+}
+.sumcount, .summoney{
+ font-size: 1.25em;
+   font-weight: bold;
+}
+.buttongroup{
+ text-align: center;
+ margin-top: -10px;
+ margin-left: -20px;
+}
+.buttongroup a{
+ text-decoration: none;
+}
+.cmd a, .cmd span {
+   padding: 12px 30px;
+   box-sizing: border-box;
+   margin-top: 10px;
+   font-size: 1.2em;
+   color: #000;
+   background-color: gray;
+   border: 1px solid #e0e0e0;
+   text-align: center;
+   font-family: 'Black Han Sans', sans-serif;
+}
+.cmd.small a, .cmd.small span {
+   padding: 6px 20px;
+   font-size: 0.8125em;
+}
+
+.orderform .p_num {
+   text-align: right;
+   width: 40px;
+   font-size: 1em;
+}
