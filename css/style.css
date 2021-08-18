@@ -1,74 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    margin: 30px;
-    background-color: gray;
-    
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-ul
-{
- list-style: none;
+body {
+  margin: 30px;
+  background-color: gray;
 }
 
-#tablet{
-border:30px solid #222;
-box-sizing: content-box;
- margin:0 auto;
- width: 1100px;
- height:600px;
- border-radius: 25px;
- background-color: white;
+ul {
+  list-style: none;
 }
 
-
-#left-sidebar
-{
-    width:150px;
-    height:100%;
-    float: left;
+#tablet {
+  border: 20px solid #222;
+  box-sizing: content-box;
+  margin: 0 auto;
+  width: 1100px;
+  height: 600px;
+  border-radius: 25px;
+  background-image: url("벽돌.png");
 }
 
-#middle
-{
-    float: left;
-    width:800px;
-    height:100%;
-    background-color: white;
-    margin: 0 auto;
+#left-sidebar {
+  width: 150px;
+  height: 100%;
+  float: left;
 }
 
-
-#right-sidebar
-{
-    width:150px;
-    height:100%;
-    float:left;
+#middle {
+  float: left;
+  width: 800px;
+  height: 100%;
+  margin: 0 auto;
 }
 
-#logo
-{
- float:left;
- width: 150px;
- height: 100px;
+#right-sidebar {
+  width: 150px;
+  height: 100%;
+  float: left;
 }
 
-.tabimage
-{
-    margin: 0 auto;
-    height:500px;
-    background-color:white;
+.tabimage {
+  margin: 0 auto;
+  height: 480px;
 }
-#tang::-webkit-scrollbar
-{
-    display: none;
+#tang::-webkit-scrollbar {
+  display: none;
 }
+#alcohol::-webkit-scrollbar {
+  display: none;
+}
+#tabMenu::-webkit-scrollbar {
+  display: none;
+}
+<<<<<<< HEAD
 #alcohol::-webkit-scrollbar
 {
     display:none;
@@ -76,6 +68,84 @@ box-sizing: content-box;
 #tabMenu::-webkit-scrollbar
 {
     display:none;
+=======
+/* 
+--------------------------
+--------------------------
+--------------------------
+로고
+--------------------------
+--------------------------
+--------------------------
+*/
+.logo {
+  float: left;
+  width: 150px;
+  height: 100px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 30px;
+}
+
+.neon {
+  font-family: "East Sea Dokdo", cursive;
+  color: #fb4264;
+  margin-top: 10px;
+  font-size: 80px;
+  line-height: 30px;
+  text-shadow: 0 0 3vw #f40a35;
+}
+
+.neon2 {
+  font-family: "East Sea Dokdo", cursive;
+  color: #426dfb;
+  margin-top: 20px;
+  font-size: 80px;
+  line-height: 30px;
+  text-shadow: 0 0 3vw #2356ff;
+}
+
+.neon {
+  animation: neon 1s ease infinite;
+  -moz-animation: neon 1s ease infinite;
+  -webkit-animation: neon 1s ease infinite;
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #fa1c16, 0 0 3vw #fa1c16, 0 0 10vw #fa1c16,
+      0 0 10vw #fa1c16, 0 0 0.4vw #fed128, 0.5vw 0.5vw 0.1vw #806914;
+    color: #fed128;
+  }
+  50% {
+    text-shadow: 0 0 0.5vw #800e0b, 0 0 1.5vw #800e0b, 0 0 5vw #800e0b,
+      0 0 5vw #800e0b, 0 0 0.2vw #800e0b, 0.5vw 0.5vw 0.1vw #40340a;
+    color: #806914;
+  }
+}
+
+.neon2 {
+  animation: neon2 1s linear infinite;
+  -moz-animation: neon2 1s linear infinite;
+  -webkit-animation: neon2 1s linear infinite;
+  -o-animation: neon2 1s linear infinite;
+}
+
+@keyframes neon2 {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #1041ff, 0 0 3vw #1041ff, 0 0 10vw #1041ff,
+      0 0 10vw #1041ff, 0 0 0.4vw #8bfdfe, 0.5vw 0.5vw 0.1vw #147280;
+    color: #28d7fe;
+  }
+  50% {
+    text-shadow: 0 0 0.5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180,
+      0 0 5vw #082180, 0 0 0.2vw #082180, 0.5vw 0.5vw 0.1vw #0a3940;
+    color: #146c80;
+  }
+>>>>>>> hojunExample
 }
 /* 
 --------------------------
@@ -86,40 +156,46 @@ box-sizing: content-box;
 --------------------------
 --------------------------
 */
-#tabMenu input[type="radio"]{
-    display: none;
+#tabMenu input[type="radio"] {
+  display: none;
 }
 
-#tabMenu label{
-    /*font-family: 'Poor Story', cursive;*/
+#tabMenu label {
+  /*font-family: 'Poor Story', cursive;*/
 
-    width:125px;
-    height:60px;
-    display: inline-block;
-    margin: 10px 0 30px 0;
-    padding: 15px 25px;
-    font-size: 25px;
-    text-align:center;
-    color:white;
-    background-color:black /*rgb(52, 152, 219)*/;
-    border: 1px solid transparent;
-    border-radius: 25px;
-    font-family: 'Black Han Sans', sans-serif;
-    white-space: nowrap;
+  width: 125px;
+  height: 70px;
+  display: inline-block;
+  margin: 10px 0 30px 0;
+  padding: 20px 25px;
+  font-size: 25px;
+  text-align: center;
+  color: #32f1ff;
+  background-color: black /*rgb(52, 152, 219)*/;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-family: "Black Han Sans", sans-serif;
+  white-space: nowrap;
+  text-transform: uppercase;
+  transition: all 0.1s ease-in-out;
+  border: 2px solid #32f1ff;
 }
 
-#tabMenu label:hover{
-    color: #b00;
-    cursor: pointer;
+#tabMenu label:hover {
+  background: #03e9f4;
+  color: #fff;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 50px #03e9f4;
 }
 
-#tabMenu input:checked + label{
-    color: #b00;
-    border: 1px solid #ddd;
-    background-color: #eee;
-    box-shadow: 5px 5px 5px;
+#tabMenu input:checked + label {
+  background: #03e9f4;
+  color: #fff;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 30px #03e9f4;
 }
 
+<<<<<<< HEAD
 #tabMenu h2
 {
     font-family: 'Gugi', cursive;
@@ -127,6 +203,8 @@ box-sizing: content-box;
 }
 
 
+=======
+>>>>>>> hojunExample
 /* 
 --------------------------
 --------------------------
@@ -136,41 +214,50 @@ box-sizing: content-box;
 --------------------------
 --------------------------
 */
-.tabimage{
-
-    padding:20px;
-    display:none;
-    text-align: center;
+.tabimage {
+  padding: 20px;
+  display: none;
+  text-align: center;
 }
-.tabimage ul li{
-    display: block;
+.tabimage ul li {
+  display: block;
 }
-
-.tabimage li
-{
-    float:left;
-    width:200px;
-    margin: 5px;
-    
-}
-.food{
-    width: 200px;
-    height: 200px;
-    display: block;
+#tabMenu h2 {
+  font-family: "Jua", sans-serif;
+  text-align: left;
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #03e9f4, 0 0 10px #03e9f4, 0 0 30px #03e9f4,
+    0 0 30px #03e9f4;
 }
 
-.tabimage li a p{
-    display: block;
-    padding: 5px 0;
-    background-color:black;
-    line-height: 1.5;
-    font-size: 20px;
-    text-align:center;
-    color:white;
-    font-family:'Black Han Sans', sans-serif;
+.tabimage li {
+  float: left;
+  width: 230px;
+  margin: 10px;
+  outline: 2px solid #d3eef0;
+
+  box-shadow: 0 0 5px #03e9f4, 0 0 10px #03e9f4, 0 0 30px #03e9f4,
+    0 0 30px #03e9f4;
 }
 
+.food {
+  width: 230px;
+  height: 200px;
+  display: block;
+}
 
+.tabimage li a p {
+  display: block;
+  padding: 5px 0;
+  background-color: black;
+  line-height: 1.5;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  font-family: "Black Han Sans", sans-serif;
+}
 
 /* 탭 메뉴와 이미지 연결 하기 */
 #tab1:checked ~ #tang,
@@ -178,24 +265,36 @@ box-sizing: content-box;
 #tab3:checked ~ #fried,
 #tab4:checked ~ #alcohol,
 #tab5:checked ~ #soda,
-#tab6:checked ~ #fruit{
-    display:block;
+#tab6:checked ~ #fruit {
+  display: block;
 }
 
 /* 사이드 메뉴리스트 css */
-#side-menu ul li{
-    float:left;
-    text-align: center;
-    width: 130px;
-    height: 60px;
-    padding:20px;
-    margin:10px 10px auto;
-    border-radius: 25px;
-    background-color: black;
+#side-menu ul li {
+  float: left;
+  text-align: center;
+  width: 130px;
+  height: 60px;
+  padding: 20px;
+  margin: 20px 20px auto;
+  margin-left: 20px;
+  border-radius: 25px;
+  color: #32f1ff;
+  background-color: black;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-family: "Black Han Sans", sans-serif;
+  white-space: nowrap;
+  text-transform: uppercase;
+  transition: all 0.1s ease-in-out;
+  border: 2px solid #32f1ff;
+  box-shadow: 0 0 2px #03e9f4, 0 0 8px #03e9f4, 0 0 10px #03e9f4,
+    0 0 10px #03e9f4;
 }
 
 /* 사이드 버튼 css */
 #sidebar {
+<<<<<<< HEAD
     background-color: transparent;
     font-size: 20px;
     font-family:'Black Han Sans', sans-serif;
@@ -203,24 +302,23 @@ box-sizing: content-box;
     outline: 0;
     white-space: nowrap;
     color: white;
+=======
+  background-color: transparent;
+  font-size: 20px;
+  font-family: "Black Han Sans", sans-serif;
+  border: 0;
+  outline: 0;
+  white-space: nowrap;
+  color: #32f1ff;
+>>>>>>> hojunExample
 }
-
 
 /* 사이드 버튼 a링크 css */
 #side-menu ul li a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: #32f1ff;
 }
-#side-menu ul li a:link {
-    color: white;
-}
-#side-menu ul li a:visited{
-    color: white;
-}
-#side-menu ul li a:hover{
-    color: red;
-    cursor: pointer;
-}
+<<<<<<< HEAD
 #sidebar:hover{
     color: red;
     cursor: pointer;
@@ -249,10 +347,36 @@ box-sizing: content-box;
     padding: 20px;
     border: 1px solid #888;
     width: 50%; /* Could be more or less, depending on screen size */
+=======
+
+/* mystyle.css */
+/* The Modal (background) */
+.modal {
+  color: black;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+>>>>>>> hojunExample
 }
 
 .close:hover,
 .close:focus {
+<<<<<<< HEAD
     color: black;
     text-decoration: none;
     cursor: pointer;
@@ -290,93 +414,152 @@ box-sizing: content-box;
     background-color: black; 
     opacity: 0.9; 
 }
+=======
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-call {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  font-family: "Black Han Sans", sans-serif;
+  padding: 50px 0;
+  font-size: 30px;
+  width: 500px;
+  height: 200px;
+  border-radius: 0.5rem;
+}
+#call_close {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  margin-top: 100px;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background-color: black;
+  color: white;
+}
+#call_close:hover {
+  color: #b00;
+  background-color: black;
+  opacity: 0.9;
+}
+>>>>>>> hojunExample
 /*-----------------------------------
 -----------------------------------
 -----------------------------------
 ----------호출팝업---------------------
 -----------------------------------
 -----------------------------------*/
-.call{ 
-    text-align:center;
-    display: block;
-    margin: 50px auto;
-    width:100%;
-    height:50px;
-    color:black;
-} 
-#cancel { 
-    display: block;
-    position: relative;
-    width: 100%; height: 50px; 
-    margin-top:50px;
-    text-align: center; 
-    border: none; 
-    cursor: pointer; 
-    border-radius: 0.5rem; 
-    background-color: black;
-    color: white;
-} 
-#cancel:hover{ 
-    color: #b00; 
-    background-color: black; 
-    opacity: 0.9; 
+.call {
+  text-align: center;
+  display: block;
+  margin: 50px auto;
+  width: 100%;
+  height: 50px;
+  color: black;
+}
+#cancel {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-top: 50px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background-color: black;
+  color: white;
+}
+#cancel:hover {
+  color: #b00;
+  background-color: black;
+  opacity: 0.9;
 }
 
-.call_popup { 
-   display: block;
-    position: fixed; 
-    left: 0; 
-    top: 0; 
-    width: 100%; 
-    height: 100%; 
-    background-color: rgba(0, 0, 0, 0.5); 
-    opacity: 0; 
-    visibility: hidden; 
-    transform: scale(1.1); 
-    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s; 
-} 
-.call_popup-content { 
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    background-color: white; 
-    
-    width: 500px; 
-    height: 200px; 
-    border-radius: 0.5rem; 
-} 
-.show-modal { 
-    opacity: 1; 
-    visibility: visible; 
-    transform: scale(1.0); 
-    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s; 
-} 
+.call_popup {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.call_popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+
+  width: 500px;
+  height: 200px;
+  border-radius: 0.5rem;
+}
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
 
 /* 오른쪽 사이드 메뉴 바!!!! */
-#loginBtn
-{
-    background-color: black;
-    width: 150px;
-    height: 80px;
-    font-family: 'Black Han Sans', sans-serif;
-    color: white;
-    font-size:25px;
-    border-radius: 50%;
-    border:1px black;
-    outline: 0;
-    white-space: nowrap;    
+#loginBtn {
+  background-color: black;
+  width: 150px;
+  height: 80px;
+  font-family: "Black Han Sans", sans-serif;
+  color: white;
+  font-size: 25px;
+  border-radius: 50%;
+  border: 1px;
+  outline: 0;
+  white-space: nowrap;
 }
 
-#loginBtn:hover{
-    color: red;
-    cursor: pointer;
+#loginBtn:hover {
+  color: red;
+  cursor: pointer;
 }
 
-#right-sidebar a
-{
-    text-decoration: none;
-    color: inherit;
+#right-sidebar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#rouletteBtn {
+  float: left;
+  text-align: center;
+  width: 130px;
+  height: 60px;
+  padding: 20px;
+  margin: 10px 10px auto;
+  border-radius: 25px;
+  background-color: black;
+  font-size: 20px;
+  font-family: "Black Han Sans", sans-serif;
+  border: 0;
+  outline: 0;
+  color: white;
+}
+
+#rouletteBtn:hover {
+  color: red;
+  cursor: pointer;
 }
 
 #rouletteBtn
