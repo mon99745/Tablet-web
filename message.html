@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>단타포차에 오신걸 환영합니다.</title>
-    <link rel="stylesheet" href="css/massage.css">
+    <link rel="stylesheet" href="css/message.css">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript">
       $(window).keydown(function(e) {
@@ -30,22 +30,22 @@
                <nav id="side-menu">
                   <ul>
                      <li>
-                           <button type="button" class="sidebar">
+                           <button type="button" id="sidebar">
                               <a href="login.html">가입하기</a>
                            </button>
                      </li>
                      <li>
-                           <button type="button" class="sidebar">
+                           <button type="button" id="sidebar">
                               <a href="baguni.html">장바구니</a>
                            </button>
                      </li>
                      <li>
-                           <button type="button" class="sidebar">
-                              <a href="massage.html">메시지</a>
+                           <button type="button" id="sidebar">
+                              <a href="messege.html">메시지</a>
                            </button>
                      </li>
                      <li>
-                           <button type="button" class="sidebar">
+                           <button type="button" id="sidebar">
                               <a href="#">호출</a>
                            </button>
                      </li>
@@ -56,7 +56,7 @@
 
       <div id=middle> <!--가운데 레이아웃-->
          <div id="tabMenu" style= "overflow-y: scroll"> <!--상단 메뉴 리스트-->
-            <div class="massageTab" style= "overflow-y: scroll"> <!--상단 메뉴 리스트-->
+            <div class="messageTab" style= "overflow-y: scroll"> <!--상단 메뉴 리스트-->
                메시지
             </div>
             <!-- textarea -->
@@ -64,7 +64,7 @@
                여긴 어떻게 구현하냐
             </div>
             <div class="textBox">
-               <input type="text" name="toSend" class="sendText" placeholder="massage">
+               <input type="text" name="toSend" class="sendText" placeholder="message">
                <a href=""><img id="logo" src="image/sendBtn.png"></a>
             </div>
             <!-- 키보드 -->

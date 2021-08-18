@@ -12,59 +12,45 @@
 <body>
     
     <div id=tablet> 
-        <div id=left-sidebar> <!--왼쪽 사이드 레이아웃-->
-            <div id=logo> <!--단타포차 로고-->
-                <a href="index.html"><img id="logo" src="image/logo.png"></a>
+        <div id=left-sidebar> <!--왼쪽 사이드 레이아웃--> 
+            <div class=logo href="index.html"> <!--단타포차 로고-->
+<div class="neon">단타</div>
+<div class="neon2">포차</div>
             </div>
             <div id=left-list> <!--=왼쪽 사이드 메뉴 리스트-->
                 <nav id="side-menu">
                     <ul>
                         <li>
-                            <button type="button" class="sidebar">
+                            <button type="button" id="sidebar">
                                 <a href="sign-up.html">회원가입</a>
                             </button>
                         </li>
                         <li>
-                            <button type="button" class="sidebar" id="myBtn">
+                            <button type="button" id="sidebar" class="btn">
                                 장바구니
                             </button>
-                            
-                            <div id="myModal" class="modal">
-                                <!-- Modal content -->
-                                <div class="modal-content" onclick="">
-                                    <div class="modal-header">
-                                        <span class="close">&times;</span>
-                                        <h2>Modal Header</h2>
-                                      </div>
-                                      <div class="modal-body">
-                                        <p>Some text in the Modal Body</p>
-                                        <p>Some other text...</p>
-                                      </div>
-                                      <div class="modal-footer">
-                                        <h3>Modal Footer</h3>
-                                      </div>
-                                </div>
+                        <div class="modal">
+                            <div class="modal-content">
+                                <span class="close" id=baguni_close>&times;</span>
+                                <p>장바구니 Modal</p>
                             </div>
+                        </div>
                         </li>
                         <li>
-                            <button type="button" class="sidebar">
-                                <a href="massage.html">메시지</a>
+                            <button type="button" id="sidebar">
+                                <a href="message.html">메시지</a>
                             </button>
                         </li>
                         <li>
-                            <button type="button" class="sidebar" id="trigger">
+                            <button type="button" id="sidebar" class="btn">
                                 호출
                             </button>
-                            <div class="call_popup"> 
-                                <div class="call_popup-content"> 
-                          
-                                    <h1 class="call">직원이 호출 되었습니다.</h1> 
-                                      <input type="button" id="cancel" value="확인"> 
-                                  
-
-                                </div> 
+                            <div class="modal">
+                                <div class="modal-call">
+                                    <span id=call_close class="close">확인</span>
+                                    <p>직원이 호출 되었습니다.</p>
+                                </div>
                             </div>
-
                     
                         </li>
                     </ul>
@@ -88,13 +74,10 @@
                 <input type="radio" id="tab6" name="tabs">
                 <label for="tab6">과일</label>
 
-                <!-- popUp -->
-                
-
                 <!-- popup-->
                 <div id="tang" class="tabimage" style= "overflow-y: scroll"> <!--메뉴 이미지-->
                     
-                    <h2>뜨끈뜨끈한 탕 메뉴!</h2>
+                    <h2>보글보글 탕탕탕!</h2>
                     <ul>
                         <li><a heref="#"><img class="food" src="image/오뎅탕.jpeg"><p>오뎅탕<p>15900원</p></a></li>
                         <li><a heref="#"><img class="food" src="image/김치찌개.jpeg"><p>김치찌개<p>15900원</p></a></li>
@@ -104,7 +87,7 @@
                     </ul>
                 </div>
                 <div id="stir-fry" class="tabimage">
-                    <h2>맛있는 볶음메뉴!</h2>
+                    <h2>볶으면 뭔들...</h2>
                     <ul>
                         <li><a heref="#"><img class="food" src="image/곱창볶음.jpeg"><p>곱창볶음<p>15900원</p></a></li>
                         <li><a heref="#"><img class="food" src="image/제육볶음.jpeg"><p>제육볶음<p>15900원</p></a></li>
@@ -112,7 +95,7 @@
                     </ul>
                 </div>
                 <div id="fried" class="tabimage">
-                    <h2>바삭바삭 튀김메뉴!</h2>
+                    <h2>바삭바삭 튀김!</h2>
                     <ul>
                     <li><a heref="#"><img class="food" src="image/감자튀김.jpeg"><p>감자튀김<p>8900원</p></a></li>
                     <li><a heref="#"><img class="food" src="image/쥐포튀김.jpeg"><p>쥐포튀김<p>8900원</p></a></li>
@@ -120,7 +103,7 @@
                     </ul>
                 </div>
                 <div id="alcohol" class="tabimage" style= "overflow-y: scroll">
-                    <h2>시원한 소주 맥주!</h2>
+                    <h2>술이들어간다 쭉쭉~</h2>
                     <ul>
                     <li><a heref="#"><img class="food" src="image/처음처럼.jpeg"><p>처음처럼<p>4500원</p></a></li>
                     <li><a heref="#"><img class="food" src="image/참이슬후레쉬.jpeg"><p>참이슬후레쉬<p>4500원</p></a></li>
@@ -131,7 +114,7 @@
                     </ul>
                 </div>
                 <div id="soda" class="tabimage">
-                    <h2>톡쏘는 탄산음료!</h2>
+                    <h2>톡 쏘는 음료!</h2>
                     <ul>
                         <li><a heref="#"><img class="food" src="image/코카콜라.jpeg"><p>코카콜라<p>2000원</p></a></li>
                         <li><a heref="#"><img class="food" src="image/환타오렌지.jpeg"><p>환타 오렌지<p>2000원</p></a></li>
@@ -139,7 +122,7 @@
                 </ul>
                 </div>
                 <div id="fruit" class="tabimage">
-                    <h2>스위트한 과일!</h2>
+                    <h2>신선한 과일</h2>
                     <ul>
                          <li><a heref="#"><img class="food" src="image/모듬과일.jpeg"><p>모듬과일<p>12000원</p></a></li>
                 </ul>
@@ -156,12 +139,20 @@
                             </button>
                             
                     </li>
+                    <li>
+                        <button type="button" id="rouletteBtn">
+                            <a href="roulette.html">룰렛</a>
+                        </button>
+                    </li>
+                
                 </ul>
             </div>
         
         </div>
     </div>
 
-    <script src="js/callpopup.js"></script>
+    <script src=js/callpopup.js></script> 
+    <script src=js/modal.js></script>
+ 
 </body>
 </html>
