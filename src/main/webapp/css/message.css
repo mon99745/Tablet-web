@@ -81,18 +81,18 @@
   background-color: black;
 }
 
-/* 키보드 */
+/* /* 키보드
 #keyboard {
-  /* 전체적인 키보드 위치 또는 외형 */
+  전체적인 키보드 위치 또는 외형
   position: absolute;
   z-index: 20;
   width: 59.9%;
   float: unset;
   background: whitesmoke;
 
-  /* 상단 패딩 */
+  상단 패딩
   padding: 8px 0 0px;
-}
+} */ */
 
 #middle ul {
   list-style-type: none;
