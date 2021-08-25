@@ -20,7 +20,7 @@
   xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
                       http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
   version="4.0"
-  metadata-complete="false">
+  metadata-complete="true">
 	
   <display-name>Member</display-name>
   
