@@ -29,7 +29,7 @@ ul {
 }
 
 #left-sidebar {
-  width: 150px;
+  width: 120px;
   height: 100%;
   float: left;
 }
@@ -39,6 +39,7 @@ ul {
   width: 800px;
   height: 100%;
   margin: 0 auto;
+  margin-left: 30px;
 }
 
 #right-sidebar {
@@ -71,21 +72,25 @@ ul {
 */
 .logo {
   float: left;
-  width: 150px;
-  height: 100px;
+  width: 140px;
+  height: 120px;
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
 }
 
 .neon {
   font-family: "East Sea Dokdo", cursive;
   color: #fb4264;
-  margin-top: 10px;
+  margin-top: 1px;
   font-size: 80px;
   line-height: 30px;
   text-shadow: 0 0 3vw #f40a35;
+
 }
 
 .neon2 {
@@ -95,6 +100,7 @@ ul {
   font-size: 80px;
   line-height: 30px;
   text-shadow: 0 0 3vw #2356ff;
+
 }
 
 .neon {
@@ -136,6 +142,7 @@ ul {
       0 0 5vw #082180, 0 0 0.2vw #082180, 0.5vw 0.5vw 0.1vw #0a3940;
     color: #146c80;
   }
+
 }
 /* 
 --------------------------
@@ -146,13 +153,15 @@ ul {
 --------------------------
 --------------------------
 */
+#tabMenu {
+  text-align: center;
+}
 #tabMenu input[type="radio"] {
   display: none;
 }
 
 #tabMenu label {
   /*font-family: 'Poor Story', cursive;*/
-
   width: 125px;
   height: 70px;
   display: inline-block;
@@ -174,15 +183,15 @@ ul {
 #tabMenu label:hover {
   background: #03e9f4;
   color: #fff;
-  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
-    0 0 50px #03e9f4;
+  box-shadow: 0 0 5px #03e9f4, 0 0 5px #03e9f4, 0 0 5px #03e9f4,
+    0 0 5px #03e9f4;
 }
 
 #tabMenu input:checked + label {
   background: #03e9f4;
   color: #fff;
-  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
-    0 0 30px #03e9f4;
+  box-shadow: 0 0 5px #03e9f4, 0 0 10px #03e9f4, 0 0 15px #03e9f4,
+    0 0 15px #03e9f4;
 }
 
 /* 
@@ -257,7 +266,7 @@ ul {
   height: 60px;
   padding: 20px;
   margin: 20px 20px auto;
-  margin-left: 20px;
+  margin-left: 15px;
   border-radius: 25px;
   color: #32f1ff;
   background-color: black;
@@ -281,6 +290,7 @@ ul {
   outline: 0;
   white-space: nowrap;
   color: #32f1ff;
+  cursor: pointer;
 }
 
 /* 사이드 버튼 a링크 css */
@@ -294,7 +304,8 @@ ul {
 .modal {
   color: black;
   display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
+  position: fixed; /*Stay in place */
+  float: right;
   z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
@@ -358,7 +369,7 @@ ul {
 ----------호출팝업---------------------
 -----------------------------------
 -----------------------------------*/
-.call {
+/* .call {
   text-align: center;
   display: block;
   margin: 50px auto;
@@ -414,7 +425,7 @@ ul {
   visibility: visible;
   transform: scale(1);
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-}
+} */
 
 /* 오른쪽 사이드 메뉴 바!!!! */
 #loginBtn {
