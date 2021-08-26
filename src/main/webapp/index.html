@@ -16,9 +16,10 @@
     <div id=tablet> 
         <div id=left-sidebar> <!--왼쪽 사이드 레이아웃--> 
             <div class=logo href="index.html"> <!--단타포차 로고-->
-<div class="neon">단타</div>
-<div class="neon2">포차</div>
-            </div>
+                <button type="button" id="sidebar">
+                    <a href="index.html">단타<br>포차</a>
+                </button>
+                 </div>
             <div id=left-list> <!--=왼쪽 사이드 메뉴 리스트-->
                 <nav id="side-menu">
                     <ul>
@@ -162,16 +163,20 @@
           
           
         </div>
-        <div id=right-sidebar> <!--오른쪽 사이드 레이아웃-->
-            
-            <div id=right-list >
-         
-            </div>
-        
-        </div>
     </div>
-
-    <script src=js/callpopup.js></script> 
+    <div id=right-sidebar> <!--오른쪽 사이드 레이아웃-->
+            
+        <div id=right-list >
+            <ul>
+                <li id=tableNumber>
+                    <p>테이블명</p>
+                    <p>DEMO</p>    
+                </li>
+            
+            </ul>
+        </div>
+    
+    </div>
     <script src=js/modal.js></script>
  
 </body>
