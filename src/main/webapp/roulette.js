@@ -125,11 +125,7 @@ function updateData() {
 			color: color
 		});
 
-<<<<<<< HEAD
-		$e.css('background', 'linear-gradient(to right, ' + color + ' 11%, rgba(0, 0, 0, 0) 0%)');
-=======
 		
->>>>>>> hojunExample
 	});
 
 	R.Items = items;

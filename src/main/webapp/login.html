@@ -29,12 +29,13 @@
               <form class="login-form" action="memberLoginAction.me" method="post">
               
             	  <!-- id -->
-                <input type="text" name="member_id" />
+
+                <input type="text" name="member_id" placeholder="ID"/>
                   <!-- pwd -->
-                <input type="password" name="member_pwd" />
+                <input type="password" name="member_pwd" placeholder="password"/>
                 
-                <input type="submit" value="로그인"/>
-                <input type="button" value="회원가입" onclick="location.href='memberJoin.me'"/>
+                <button type="submit">로그인</button>
+                <input type="button" value="회원가입" onclick="location.href='/memberJoin.me'"/>
                 
                 <p class="message">아이디 비밀번호를 잊으셨나요?<a href="#">Id/Pw 찾기</a></p>
               </form>
