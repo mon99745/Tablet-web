@@ -42,7 +42,8 @@ public class MemberLoginAction implements Action{
 			session.setAttribute("id", dto.getMember_id()); //바인딩 객체
 			
 			ActionForward forward = new ActionForward();
-			forward.setPath("index.html");
+			//로그인 시 회원전용페이지로 이
+			forward.setPath("memberIndex.html");
 			forward.setRedirect(false);
 			return forward;
 		}
