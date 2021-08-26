@@ -10,10 +10,14 @@
 <body>
    <div id=tablet> 
       <div id=left-sidebar> <!--왼쪽 사이드 레이아웃-->
-            <button type="button" class="mainBtn">
-               <a href="index.html">메인이동</a>
-            </button>
-            
+         <button class=logo onclick="location.href('index.html')">
+            <!--단타포차 로고-->
+            <div class="neon">단타</div>
+            <div class="neon2">포차</div>
+         </button>
+         <button type="button" class="mainBtn">
+            <a href="index.html">메인이동</a>
+         </button>
       </div>
 
       <div id=middle> <!--가운데 레이아웃--> 
@@ -22,10 +26,16 @@
          </div>
          <div class="login-page">
             <div class="form">
-              <form class="login-form">
-                <input type="text" placeholder="ID"/>
-                <input type="password" placeholder="password"/>
-                <button>login</button>
+              <form class="login-form" action="memberLoginAction.me" method="post">
+              
+            	  <!-- id -->
+                <input type="text" name="member_id" />
+                  <!-- pwd -->
+                <input type="password" name="member_pwd" />
+                
+                <input type="submit" value="로그인"/>
+                <input type="button" value="회원가입" onclick="location.href='memberJoin.me'"/>
+                
                 <p class="message">아이디 비밀번호를 잊으셨나요?<a href="#">Id/Pw 찾기</a></p>
               </form>
             </div>
