@@ -303,7 +303,7 @@ ul {
   animation: flicker-box 1.5s infinite alternate;
 }
 
-.tabimage li a  {
+.tabimage li a {
   display: block;
   padding-top: 5px;
   line-height: 1.5;
