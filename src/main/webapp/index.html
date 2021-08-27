@@ -29,14 +29,14 @@
                         </li>
                         <li>
                             <button type="button" id="sidebar" class="btn">
-                                장바구니
+                                <a href="./basket/basketList.jsp">장바구니</a>
                             </button>
-                        <div class="modal">
+                        <!-- <div class="modal">
                             <div class="modal-content">
                                 <span class="close" id=baguni_close>&times;</span>
                                 <p>장바구니 Modal</p>
                             </div>
-                        </div>
+                        </div> -->
                         </li>
                     	<li>
 							<button type="button" id="sidebar">
@@ -91,8 +91,10 @@
                 <div id="tang" class="tabimage" style= "overflow-y: scroll"> <!--메뉴 이미지-->
                     
                     <h2>보글보글 탕탕탕!</h2>
+                    <form action ="./basket/basketAction.jsp" method = "get">
                     <ul>
-                        <li><a heref="#"><img class="food" src="image/곱도리탕.jpeg"><p>곱도리탕<p>15900원</p></a></li>
+                       <!--  <li><button type="img" name ="food" value="곱도리탕" src="image/곱도리탕.jpeg" ><p>곱도리탕<p>15900원</p></a></li> -->
+                        <li><button type="img" name ="food" value="곱도리탕"><img class="food" src ="image/곱도리탕.jpeg"><a>곱도리탕<br>15900원</a></button></li>  
                         <li><a heref="#"><img class="food" src="image/곱창묵은지전골.jpeg"><p>곱창 묵은지 전골<p>15900원</p></a></li>
                         <li><a heref="#"><img class="food" src="image/나가사키탕.jpeg"><p>나가사키 탕<p>15900원</p></a></li>
                         <li><a heref="#"><img class="food" src="image/밀푀유나베.jpeg"><p>밀푀유나베<p>15900원</p></a></li>
@@ -104,6 +106,7 @@
                         <li><a heref="#"><img class="food" src="image/차돌박이김치찌개.jpeg"><p>차돌박이 김치찌개<p>15900원</p></a></li>
                         <li><a heref="#"><img class="food" src="image/크림짬뽕.jpeg"><p>크림짬뽕<p>15900원</p></a></li>
                     </ul>
+                    </form>
                 </div>
                 <div id="stir-fry" class="tabimage" style= "overflow-y: scroll">
                     <h2>볶으면 뭔들...</h2>
