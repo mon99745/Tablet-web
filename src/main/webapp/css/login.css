@@ -1,7 +1,7 @@
 @import url(/css/style.css);
-@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
 /* 
 --------------------------
 --------------------------
@@ -13,100 +13,114 @@ login.html
 */
 /*로그인창 상단 이미지 로고 영역 */
 
-#middle img
-{
-   width: 200px;
-   height: 150px;
-   border-radius: 50%;
+#middle img {
+  width: 200px;
+  height: 150px;
+  border-radius: 50%;
 }
-.middle-top
-{
-   text-align: center;
-   width:100%;
-   height: 150px;
+.middle-top {
+  text-align: center;
+  width: 100%;
+  height: 150px;
 }
 
 /*로그인 탭*/
 .login-page {
-   width: 360px;
-   margin: auto;
- }
- .form {
-   position: relative;
-   z-index: 1;
-   background: #FFFFFF;
-   max-width: 360px;
-   margin: 0 auto 100px;
-   padding: 45px;
-   text-align: center;
-   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
- }
- .form input {
-   font-family: 'Black Han Sans', sans-serif;
-   outline: 0;
-   background: #f2f2f2;
-   width: 100%;
-   border: 0;
-   margin: 0 0 15px;
-   padding: 15px;
-   box-sizing: border-box;
-   font-size: 14px;
- }
- .form button {
-   font-family: 'Black Han Sans', sans-serif;
-   text-transform: uppercase;
-   outline: 0;
-   background:black;
-   width: 100%;
-   border: 0;
-   padding: 15px;
-   color: #FFFFFF;
-   font-size: 14px;
-   -webkit-transition: all 0.3 ease;
-   transition: all 0.3 ease;
-   cursor: pointer;
- }
- .form button:hover,.form button:active,.form button:focus {
-   background: #eee;
-   color: black;
- }
- .form .message {
-   margin: 15px 0 0;
-   color: #b3b3b3;
-   font-size: 12px;
- }
- .form .message a {
-   color: blue;
-   text-decoration: none;
- }
- .form .register-form {
-   display: none;
- }
- .message a
- {
-    text-align: right;
- }
+  width: 360px;
+  margin: 0 auto;
+}
+.form {
+  margin-top: 30px;
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  font-family: "Jua", sans-serif;
+  color: #fff;
+  border-radius: 2rem;
+  border: 8px solid #fff;
+  animation: flicker 1s infinite alternate;
+  text-transform: uppercase;
+
+  background-color: rgba(0, 0, 0, 0.719);
+}
+.form input {
+  font-family: "Jua", sans-serif;
+  outline: 0;
+  background: black;
+  color: #fff;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border: 2px solid #fff;
+  animation: flicker-box 1s infinite alternate;
+}
+.form input :placeholder {
+  color: #fff;
+}
+.form button {
+  font-family: "Jua", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  border: 2px solid #fff;
+  animation: flicker-box 1s infinite alternate;
+  background-color: transparent;
+}
+
+input::placeholder {
+  color: #fff;
+}
+.message {
+  animation: flicker-text 1s infinite alternate;
+
+  margin-top: 5px;
+  font-size: 12px;
+}
+.message a {
+  color: #fff;
+  text-decoration: none;
+  animation: flicker-text 1s infinite alternate;
+}
+
+.message a:visited {
+  animation: flicker-text 1s infinite alternate;
+}
+
+.form .register-form {
+  display: none;
+}
+
+.message a {
+  text-align: right;
+}
 
 /* 메인가기 버튼 css */
 .mainBtn {
-   float:left;
-   text-align: center;
-   width: 130px;
-   height: 60px;
-   padding:20px;
-   margin:10px 10px auto;
-   border-radius: 25px;
-   background-color: black;
-   border: 0;
-   outline: 0;
+  display: inline-block;
+  width: 125px;
+  height: 70px;
+  margin: 20px 0 20px 0;
+  margin-left: 30px;
+  padding: 20px 25px;
+  font-size: 25px;
+  text-align: center;
+  font-family: "Jua", sans-serif;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  animation: flicker 10000000s infinite alternate;
+  background-color: transparent;
 }
-.mainBtn a{
-   text-decoration: none;
-   color: white;
-   font-family:'Black Han Sans', sans-serif;
-   font-size: 20px;
-}
-.mainBtn a:hover{
-   color: red;
-}
-

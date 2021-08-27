@@ -10,19 +10,17 @@
 <body>
    <div id=tablet> 
       <div id=left-sidebar> <!--왼쪽 사이드 레이아웃-->
-         <button class=logo onclick="location.href('index.html')">
-            <!--단타포차 로고-->
-            <div class="neon">단타</div>
-            <div class="neon2">포차</div>
-         </button>
-         <button type="button" class="mainBtn">
-            <a href="index.html">메인이동</a>
-         </button>
+         <button class="mainBtn" onClick="history.back();">◀︎</button >
       </div>
 
       <div id=middle> <!--가운데 레이아웃--> 
          <div class=middle-top>
-            <img id="login-logo" src="image/logo.png">
+            <div class=logo href="index.html"> <!--단타포차 로고-->
+               <button type="button" id="logo">
+                   <a href="index.html">Danta</a>
+               </button>
+           
+                </div>
          </div>
          <div class="login-page">
             <div class="form">
