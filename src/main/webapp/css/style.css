@@ -39,11 +39,11 @@ ul {
   width: 800px;
   height: 100%;
   margin: 0 auto;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 #right-sidebar {
-  width: 150px;
+  width: 140px;
   height: 100%;
   float: left;
 }
@@ -80,19 +80,39 @@ ul {
 --------------------------
 --------------------------
 */
-.logo {
-  float: left;
+
+.logo button {
   width: 140px;
-  height: 120px;
-  display: table-cell;
-  text-align: center;
-  vertical-align: center;
-  margin-bottom: 5px;
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
+  height: 100px;
+  margin: 20px;
+
+  background: black;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 8px rgba(254, 208, 40, 1),
+    0px 0px 8px 10px rgba(240, 19, 11, 1),
+    inset 0px 0px 8px 4px rgba(240, 19, 11, 1),
+    0px 0px 98px 8px rgba(250, 29, 22, 1),
+    inset 0px 0px 98px 8px rgba(250, 29, 22, 1);
 }
 
+.logo a {
+  text-align: center;
+  font-family: "Jua", sans-serif;
+  font-size: 40px;
+  line-height: 4vw;
+  text-shadow: 0.1vw 0vw 0.25vw #28d7fe, 0.2vw 0vw 0.25vw #28d7fe,
+    0.4vw 0vw 0.25vw #28d7fe, 0.1vw 0vw 0.1vw #1041ff, 0.2vw 0vw 0vw #1041ff,
+    0.4vw 0vw 0vw #1041ff, 0.1vw 0vw 0.1vw #1041ff, 0.2vw 0vw 0.1vw #1041ff,
+    0.4vw 0vw 0vw #1041ff, 0.1vw 0vw 0.8vw #1041ff, 0.2vw 0vw 0.8vw #1041ff,
+    0.4vw 0vw 0.8vw #1041ff, 0.2vw 0vw 0.5vw #1041ff, 0.1vw 0vw 0.5vw #1041ff,
+    0.2vw 0vw 0.5vw #1041ff, 0.4vw 0vw 0.5vw #1041ff, 0.1vw 0vw 10vw #1041ff,
+    0.2vw 0vw 10vw #1041ff, 0.4vw 0vw 10vw #1041ff;
+  color: #28d7fe;
+}
+
+.logo a {
+  text-decoration: none;
+}
 .neon {
   font-family: "East Sea Dokdo", cursive;
   color: #fb4264;
@@ -172,7 +192,7 @@ ul {
   display: inline-block;
   width: 125px;
   height: 70px;
-  margin: 10px 0 30px 0;
+  margin: 20px 0 20px 0;
   padding: 20px 25px;
   font-size: 25px;
   text-align: center;
@@ -268,7 +288,7 @@ ul {
 --------------------------
 */
 .tabimage {
-  padding: 20px;
+  padding: 10px;
   display: none;
   text-align: center;
 }
@@ -276,11 +296,12 @@ ul {
   display: block;
 }
 #tabMenu h2 {
+  margin-top: 20px;
+  margin-left: 10px;
   font-family: "Jua", sans-serif;
   text-align: left;
   font-size: 30px;
   color: #fff;
-  margin-bottom: 20px;
   animation: flicker-text 1.5s infinite alternate;
 }
 
@@ -330,8 +351,8 @@ ul {
   width: 130px;
   height: 60px;
   padding: 20px;
-  margin: 20px 20px auto;
-  margin-left: 20px;
+  margin: 6px;
+  margin-left: 15px;
   border-radius: 2rem;
   border: 3px solid #fff;
   border-radius: 10px;
@@ -421,8 +442,17 @@ ul {
 }
 
 /* 오른쪽 사이드 메뉴 바!!!! */
-
-#right-sidebar a {
-  text-decoration: none;
-  color: inherit;
+#tableNumber {
+  background-color: rgba(255, 0, 0, 0.541);
+  font-family: "Jua", sans-serif;
+  width: 80%;
+  height: 100px;
+  margin-left: 20px;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 15px;
+  border-radius: 0 0 2rem 2rem;
+  color: #fff;
+  border: 1px black;
+  box-shadow: black 2px;
 }
