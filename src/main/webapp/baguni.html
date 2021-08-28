@@ -12,7 +12,7 @@
     <div id=tablet> 
         <div id=left-sidebar> <!--왼쪽 사이드 레이아웃-->
             <div id=logo> <!--단타포차 로고-->
-                <a href="index.html"><img id="logo" src="image/logo.png"></a>
+                
             </div>
 
             <button type="button" class="mainBtn">
@@ -28,8 +28,10 @@
 
             <div class="baguniTable">
                 <form name="orderform" id="orderform" method="post" class="orderform" action="/Page" onsubmit="return false;">
+                   
                     <!-- 장바구니 표 -->
                     <input type="hidden" name="cmd" value="order">
+                    
                     <div class="basketdiv" id="basket">
                         <div class="row head">
                             <div class="subdiv">
@@ -39,14 +41,14 @@
                             <div class="subdiv">
                                 <div class="basketprice">가격</div>
                                 <div class="num">수량</div>
-                                <div class="sum">합계</div>
+                                <!-- <div class="sum">합계</div> -->
                             </div>
                             <div class="subdiv">
                                 <div class="basketcmd">삭제</div>
                             </div>
                             <div class="split"></div>
                         </div>
-                
+                	<!-- 메뉴품목 -->
                         <div class="row data">
                             <div class="subdiv">
                                 <!-- 체크박스 -->
@@ -73,60 +75,8 @@
                                 <div class="basketcmd"><a href="javascript:void(0)" class="abutton" onclick="javascript:basket.delItem();">삭제</a></div>
                             </div>
                         </div>
-                        <div class="row data">
-                            <div class="subdiv">
-                                <!-- 체크박스 -->
-                                <div class="check"><input type="checkbox" name="buy" value="261" checked="" onclick="javascript:basket.checkItem();">&nbsp;</div>
-                                <div class="pname">
-                                    <span>감자튀김</span>
-                                </div>
-                            </div>
-                            <div class="subdiv">
-                                <div class="basketprice"><input type="hidden" name="p_price" id="p_price2" class="p_price" value="8900">8,900원</div>
-                                <div class="num">
-                                    <div class="updown">
-                                        <!-- 수량 업다운 숫자, 버튼 -->
-                                        <input type="text" name="p_num2" id="p_num2" size="2" maxlength="4" class="p_num" value="1" onkeyup="javascript:basket.changePNum(2);">
-                                        <span onclick="javascript:basket.changePNum(2);"><i class="fas fa-arrow-alt-circle-up up"></i></span>
-                                        <span onclick="javascript:basket.changePNum(2);"><i class="fas fa-arrow-alt-circle-down down"></i></span>
-                                    </div>
-                                </div>
-                                <!-- 수량에 따른 합계 -->
-                                <div class="sum">8,900원</div>
-                            </div>
-                            <div class="subdiv">
-                                <!-- 삭제버튼 -->
-                                <div class="basketcmd"><a href="javascript:void(0)" class="abutton" onclick="javascript:basket.delItem();">삭제</a></div>
-                            </div>
-                        </div>
-                        <div class="row data">
-                            <div class="subdiv">
-                                <!-- 체크박스 -->
-                                <div class="check"><input type="checkbox" name="buy" value="262" checked="" onclick="javascript:basket.checkItem();">&nbsp;</div>
-                                
-                                <div class="pname">
-                                    <span>오뎅탕</span>
-                                </div>
-                            </div>
-                            <div class="subdiv">
-                                <div class="basketprice"><input type="hidden" name="p_price" id="p_price3" class="p_price" value="15900">15,900원</div>
-                                <div class="num">
-                                    <div class="updown">
-                                        <!-- 수량 업다운 숫자, 버튼 -->
-                                        <input type="text" name="p_num3" id="p_num3" size="2" maxlength="4" class="p_num" value="1" onkeyup="javascript:basket.changePNum(3);">
-                                        <span onclick="javascript:basket.changePNum(3);"><i class="fas fa-arrow-alt-circle-up up"></i></span>
-                                        <span onclick="javascript:basket.changePNum(3);"><i class="fas fa-arrow-alt-circle-down down"></i></span>
-                                    </div>
-                                </div>
-                                <!-- 수량에 따른 합계 -->
-                                <div class="sum">15,900원</div>
-                            </div>
-                            <div class="subdiv">
-                                <!-- 삭제버튼 -->
-                                <div class="basketcmd"><a href="javascript:void(0)" class="abutton" onclick="javascript:basket.delItem();">삭제</a></div>
-                            </div>
-                        </div>
-                
+                        
+                        
                     </div>
                     <!-- 선택삭제와 전체 삭제 -->
                     <div class="right-align basketrowcmd">

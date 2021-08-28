@@ -46,6 +46,7 @@ public class chatServlet  extends javax.servlet.http.HttpServlet implements java
 	  }
 	  PrintWriter out = response.getWriter();
 	  out.println("<html><head>");
+	  out .println("<link rel=\"stylesheet\" href=\"css/style.css\">");
 	  out.println("<meta http-equiv='pragma' content='no-cache'>");
 	  out.println("<meta http-equiv='cache-control' content='no-cache'>");
 	  out.println("<meta http-equiv='refresh'");

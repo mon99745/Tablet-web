@@ -17,7 +17,7 @@ if (list == null) { %>
 장바구니에 넣은 상품이 없습니다.
 	<% }else {
 		for (String food : list) {
-		%> 여기에 들어오긴 했어요<% 
+		%><% 
 		System.out.println(food);
 		out.println(food); %> <br> <% //String 밖으로 내보내는 뜻
 		// 줄바꿈을 원할 경우 (food)안에 html 형식으로 작성

@@ -21,7 +21,9 @@ public class chatInput extends javax.servlet.http.HttpServlet implements javax.s
 		   return;
 		  }
 //		  id = myclasses.StringUtil.toHangul(id);
+		  
 		  out.println("<html><head>");
+		  out .println("<link rel=\"stylesheet\" href=\"css/style.css\">");
 		  out.println("<script language='JavaScript'>");
 		  out.println("function send(form){");
 		  out.println("    form.msg.value = form.temp.value;");

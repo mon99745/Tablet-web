@@ -2,24 +2,24 @@
 	pageEncoding="UTF-8"%>
 <%@ page import="java.util.List"%>
 <%
-//장바구니 계산 페이지
+//장바구니 계산 페이지 일단 보류상황 
 int sum = 0;
 List<String> list = (List) session.getAttribute("foodList");
 
 if (list != null) {
 	for (String food : list) {
 
-		if ("생수".equals(food)) {
+		if ("곱도리탕".equals(food)) {
 	sum += 500;
-		} else if ("생수".equals(food)) {
+		} else if ("메뉴명".equals(food)) {
 	sum += 500;
-		} else if ("생수".equals(food)) {
+		} else if ("메뉴명".equals(food)) {
 	sum += 500;
-		} else if ("생수".equals(food)) {
+		} else if ("메뉴명".equals(food)) {
 	sum += 500;
-		} else if ("생수".equals(food)) {
+		} else if ("메뉴명".equals(food)) {
 	sum += 500;
-		} else if ("생수".equals(food)) {
+		} else if ("메뉴명".equals(food)) {
 	sum += 500;
 		}
 	}

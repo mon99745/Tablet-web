@@ -29,7 +29,9 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 	   response.sendRedirect("/chat.html");
 	   return;
 	  }
+	  
 	  out.println("<html>");
+	  out .println("<link rel=\"stylesheet\" href=\"css/style.css\">");
 	  out.println("<frameset rows='85%, 15%'>");
 	  out.println("<frame src='/chatting/chatServlet?id=" + id + "&first=true' name='main'>");
 	  out.println("<frame src='/chatting/chatInput?id=" + id + "'>");
