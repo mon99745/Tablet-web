@@ -1,4 +1,4 @@
-package chatting;
+package songRequest;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -7,9 +7,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/chatServlet")
+@WebServlet("/requestServlet")
 
-public class chatServlet  extends javax.servlet.http.HttpServlet implements javax.servlet.Servlet{
+public class requestServlet  extends javax.servlet.http.HttpServlet implements javax.servlet.Servlet{
 	 static final long serialVersionUID = 1L;
 	 String message[];
 	 int index = 0, size = 10;
@@ -46,22 +46,14 @@ public class chatServlet  extends javax.servlet.http.HttpServlet implements java
 	  }
 	  PrintWriter out = response.getWriter();
 	  out.println("<html><head>");
+	  out .println("<link rel=\"stylesheet\" href=\"css/style.css\">");
+	  out .println("<link rel=\"stylesheet\" href=\"css/chat.css\">");
 	  out.println("<meta http-equiv='pragma' content='no-cache'>");
 	  out.println("<meta http-equiv='cache-control' content='no-cache'>");
 	  out.println("<meta http-equiv='refresh'");
-	  out.println("content='2; URL=./chatServlet'>");
-	  out.println("<link rel=\"stylesheet\" href=\"css/chat.css\">");
-	  out.println("<link rel=\"stylesheet\" href=\"css/style.css\">");
+	  out.println("content='2; URL=./requestServlet'>");
 	  out.println("<title>단타포차에 오신걸 환영합니다.</title></head>");
-	  out.println("<body> "
-	  		+ "<div class=left-list>"
-	  		+ "<ul><li>"
-	  		+ "<button type=\"button\" id=\"tab1\" <a href=\"/index.html\">HOME</a></button>"
-	  		+ "<button type=\"button\" id=\"tab2\" <a href=\"/index.html\">채팅방</a></button>"
-	  		+ "<button type=\"button\" id=\"tab3\" <a href=\"index.html\">노래 신청</a></button>"
-	  		+ "</li></ul></hr>"
-	  		+ "<c>");
-//	  메세지 창
+	  out.println("<body><c><center><h2>노래 신청</h2></center><hr>");
 	  int i = index;
 	  while(true){
 	   out.print(message[i]);
@@ -74,7 +66,7 @@ public class chatServlet  extends javax.servlet.http.HttpServlet implements java
 	  }
 	  out.print(message[i]);
 	  out.println("</c><br>");
-	  out.println("</div>"
-	  		+ "</body></html>");
+	  out.println("</body></html>");
+	  
 	 }
 	}
