@@ -1,403 +1,375 @@
-
 @import url(../fonts/hanna.css);
-
-
-
-
+* {
+  font-family: "Jua", sans-serif;
+}
+#tablet-roulette {
+  border: 20px solid #222;
+  box-sizing: content-box;
+  margin: 0 auto;
+  width: 1100px;
+  height: 600px;
+  border-radius: 25px;
+}
+.mainBtn {
+  display: inline-block;
+  width: 125px;
+  height: 70px;
+  margin: 20px 0 20px 0;
+  margin-left: 30px;
+  padding: 20px 25px;
+  font-size: 25px;
+  text-align: center;
+  font-family: "Jua", sans-serif;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  animation: flicker 10000000s infinite alternate;
+  background-color: transparent;
+}
+.roulette-top {
+  width: 800px;
+  height: 70px;
+  display: inline-block;
+  padding-top: 20px;
+  margin: 20px 0 20px 0;
+  margin-left: 30px;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  border-radius: 25px;
+  animation: flicker 10000000s infinite alternate;
+  overflow: hidden;
+}
 
 .wrap {
-	float:left;
-	width: 300px;
-	height: 300px;
-	text-align: center;
-	top: 0;
-	left: 0;
-	
+  float: left;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  top: 0;
+  left: 0;
 }
-
-.roulette
-{
-	margin-left: 100px;
-	margin-right: 100px;
+.roulette {
+  margin-left: 100px;
+  margin-right: 100px;
 }
-
 
 ul {
-	counter-reset: itemCounter;
-	list-style-type: none;
-	margin-left:500px;
-	padding: 0px 20px;
-	overflow-x: hidden;
-	overflow-y: auto;
-	width: 400px;
-	height: 580px;
-	top: 120px;
-	left: 600px;
-	background: black;
-
+  counter-reset: itemCounter;
+  list-style-type: none;
+  margin-left: 500px;
+  padding: 0px 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 400px;
+  height: 480px;
+  top: 120px;
+  left: 600px;
 }
 
+#list-zone::-webkit-scrollbar {
+  display: none;
+}
 li {
-	counter-increment: itemCounter;
-	position: relative;
-	width: 320px;
-	margin: 5px 0px;
-	padding: 10px;
-	border-radius: 50px 0 0 50px;
-	/*border: 1px solid black;*/
-	background: linear-gradient(to right, #eee 11%, rgba(0, 0, 0, 0) 0%);
-	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-	transition: box-shadow 0.2s ease;
+  counter-increment: itemCounter;
+  position: relative;
+  width: 320px;
+  height: 50px;
+  margin: 5px 0px;
+  padding: 10px;
+  /*border: 1px solid black;*/
+  border: 2px solid #fff;
+  background: #000;
+  animation: flicker-box 3s infinite alternate;
+  font-size: 20px;
+  overflow: hidden;
 }
 
-li:hover {
-	/*box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);*/
-	box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.6);
+li > div {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
 }
-
-li>div {
-	cursor: pointer;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	text-align: center;
-}
-
-
 
 #button-tooltip {
-	/*display: none;*/
-	background: #eff0f1;
-	position: fixed;
+  /*display: none;*/
+  background: #eff0f1;
+  position: fixed;
 }
 #button-tooltip .command {
-	color: #7D2727;
-	padding: 5px;
-	display: inline-block;
-	text-align: right;
-	width: 90px;
+  color: #7d2727;
+  padding: 5px;
+  display: inline-block;
+  text-align: right;
+  width: 90px;
 }
 #button-tooltip .number {
-	color: #3777CF;
-	padding: 5px;
-	display: inline-block;
-	text-align: left;
-	width: 60px;
+  color: #3777cf;
+  padding: 5px;
+  display: inline-block;
+  text-align: left;
+  width: 60px;
 }
 
-li.item.empty>.item-weight,
-li.item.empty>.item-weight-add,
-li.item.empty>.item-weight-sub,
-li.item.empty>.item-delete {
-	display: none !important;
+li.item.empty > .item-weight,
+li.item.empty > .item-weight-add,
+li.item.empty > .item-weight-sub,
+li.item.empty > .item-delete {
+  display: none !important;
 }
 li.item.empty::after {
-	content: '';
+  content: "";
 }
-li.item.empty>.item-title::after {
-	content: '항목 추가';
-	color: #aaa;
+li.item.empty > .item-title::after {
+  content: "항목 추가";
+  color: #fff;
 }
-li.item.empty>.item-title:focus::after {
-	content: '';
-}
-
-li.item>.item-title {
-	cursor: text;
-	position: relative;
-	text-align: left;
-	margin-left: 30px;
-	margin-right: 150px;
-	padding: 2px 15px;
-	white-space: nowrap;
-	overflow: hidden;
-	background: #eff0f1;
-	border-radius: 0px;
-
-	color: black;
-	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+li.item.empty > .item-title:focus::after {
+  content: "";
 }
 
-li.item>.item-title:focus {
-	background: transparent;
+li.item > .item-title {
+  cursor: text;
+  position: relative;
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 150px;
+  padding: 2px 15px;
+  white-space: nowrap;
+  overflow: hidden;
+
+  border-radius: 0px;
+  background-color: transparent;
+  color: #fff;
 }
 
-li.item>.item-weight {
-	padding: 10px 0;
-	cursor: default;
-	width: 45px;
-	right: 100px;
-	left: auto;
-	text-align: right;
-	overflow: visible;
+li.item > .item-title:focus {
+  background: transparent;
 }
 
-li.item>.item-weight[data-weight]::before {
-	content: 'x' attr(data-weight);
+li.item > .item-weight {
+  padding: 10px 0;
+  cursor: default;
+  width: 45px;
+  right: 100px;
+  left: auto;
+  text-align: right;
+  overflow: visible;
+  color: #fff;
 }
 
-li.item>.item-weight-add,
-li.item>.item-weight-sub {
-	width: 20px;
-	height: 20px;
-	border-radius: 10px;
-	left: 225px;
-	/*border: 1px solid transparent;*/
-	/*transition: border-color 0.2s ease;*/
-	transition: box-shadow 0.2s ease,
-				color 0.2s ease;
-	box-shadow: 0px 0px 10px transparent;
-	color: transparent;
-}
-li.item>.item-weight-add {
-	top: -1px;
+li.item > .item-weight[data-weight]::before {
+  content: "x" attr(data-weight);
 }
 
-li.item>.item-weight-sub {
-	top: 21px;
+li.item > .item-weight-add,
+li.item > .item-weight-sub {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  left: 225px;
+  /*border: 1px solid transparent;*/
+  /*transition: border-color 0.2s ease;*/
+  transition: box-shadow 0.2s ease, color 0.2s ease;
+  box-shadow: 0px 0px 10px transparent;
+  color: #fff;
+}
+li.item > .item-weight-add {
+  top: -1px;
 }
 
-li.item:hover>.item-weight-add,
-li.item:hover>.item-weight-sub {
-	color: black;
-	box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
-}
-
-li.item>.item-weight-add:hover,
-li.item>.item-weight-sub:hover {
-	/*border: 1px solid black;*/
-	box-shadow: 0px 0px 2px black;
-}
-
-li.item>.item-delete {
-	width: 20px;
-	height: 20px;
-	top: 10px;
-	left: 10px;
-	border-radius: 10px;
-	color: transparent;
-	background: transparent;
-	box-shadow: 0px 0px 10px transparent;
-	transition: color 0.2s ease,
-				background-color 0.2s ease;
-}
-li.item:hover>.item-delete {
-	color: red;
-	background: white;
-}
-li.item>.item-delete:hover {
-	color: white;
-	background: red;
+li.item > .item-weight-sub {
+  top: 21px;
 }
 
 li::before,
-ul.lock>li::before {
-	content: counter(itemCounter);
-	position: absolute;
-	top: 10px;
-	left: 9px;
+ul.lock > li::before {
+  content: counter(itemCounter);
+  position: absolute;
+  top: 10px;
+  left: 9px;
 
-	color: white;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-	width: 24px;
-	text-align: center;
+  color: white;
+  width: 24px;
+  text-align: center;
 }
-li:hover::before {
-	content: '';
-}
+
 li.empty::before {
-	content: '+';
-	color: black;
-	text-shadow: none;
+  content: "+";
+  color: #fff;
+  text-shadow: none;
 }
 li.empty {
-	cursor: pointer;
-	opacity: 0.7;
-	transition: opacity 0.7s ease;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.7s ease;
 }
-ul.lock>li.item.empty {
-	opacity: 0;
+ul.lock > li.item.empty {
+  opacity: 0;
 }
 li.empty:hover {
-	opacity: 1;
+  opacity: 1;
 }
 li.empty:hover [contenteditable] {
-	background: transparent;
-	cursor: pointer;
-}
-li[data-chance]::after {
-	content: attr(data-chance) '%';
-	position: absolute;
-	top: 10px;
-	left: 260px;
-	width: 40px;
-	overflow: visible;
-	text-align: center;
+  background: transparent;
+  cursor: pointer;
 }
 
 *[contenteditable] {
-	border-radius: 20px;
-	white-space: nowrap;
+  border-radius: 20px;
+  white-space: nowrap;
 }
 
 *[contenteditable]:hover {
-	background: #eff;
+  background: #eff;
 }
 ul.lock .item-title[contenteditable]:hover {
-	background: transparent;
-	cursor: default;
+  background: transparent;
+  cursor: default;
 }
 
 *[contenteditable]:focus {
-	outline: none;
-	background: #eee;
+  outline: none;
+  background: #eee;
 }
 
 #roll.button {
-	font-family: 'Hanna';
-	font-size: 28px;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	width: 300px;
-	height: 50px;
-	margin-left: 150px;
-	transition: background-color 0.2s ease;
-	cursor: pointer;
-	padding: 10px;
+  font-family: "Jua", sans-serif;
+  font-size: 28px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 300px;
+  height: 50px;
+  margin-left: 150px;
+  animation: flicker 10000000s infinite alternate;
+  cursor: pointer;
+  padding: 10px;
 }
 
 #roll.button::after {
-	content: '시작';
+  content: "시작";
 }
 #roll.button.active::after {
-	content: '정지!!';
+  content: "멈춰!!";
 }
 
 #roll.button {
-	background: #607D8B;
-	border: 1px solid white;
-	color: white;
-}
-#roll.button:hover {
-	background: white;
-	border: 1px solid #607D8B;
-	color: #607D8B;
-}
-#roll.button:active {
-	background: white;
-	border: 1px solid #999;
-	color: #999;
+  border: 1px solid white;
+  color: white;
 }
 
 #roll.button.active {
-	background: white;
-	border: 1px solid red;
-	color: red;
-	animation: shake-y 0.2s linear infinite;
+  background: white;
+  border: 1px solid white;
+  color: red;
+  animation: flicker 10000000s infinite alternate;
 }
 #roll.button.active:hover {
-	background: red;
-	border: 1px solid white;
-	color: white;
-}
-#roll.button.active:active {
-	background: white;
-	border: 1px solid #999;
-	color: #999;
+  background: red;
+  border: 1px solid white;
+  color: white;
 }
 
 ul.lock .item-delete,
 ul.lock .item-weight-add,
 ul.lock .item-weight-sub {
-	display: none !important;
+  display: none !important;
 }
 
 @keyframes shake-x {
-	0%, 50%, 100% {
-		transform: translate(0, 0);
-	}
-	25% {
-		transform: translate(-3px, 0);
-	}
-	75% {
-		transform: translate(3px, 0);
-	}
+  0%,
+  50%,
+  100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-3px, 0);
+  }
+  75% {
+    transform: translate(3px, 0);
+  }
 }
 @keyframes shake-y {
-	0%, 50%, 100% {
-		transform: translate(0, 0);
-	}
-	25% {
-		transform: translate(0, -3px);
-	}
-	75% {
-		transform: translate(0, 3px);
-	}
+  0%,
+  50%,
+  100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0, -3px);
+  }
+  75% {
+    transform: translate(0, 3px);
+  }
 }
 
 /*scroll bar*/
 
-::-webkit-scrollbar-track
-{
-	background-color: transparent;
+::-webkit-scrollbar-track {
+  background-color: transparent;
 }
 
-::-webkit-scrollbar
-{
-	width: 10px;
-	background-color: transparent;
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
 }
 
-::-webkit-scrollbar-thumb
-{
-	background-color: #eee;
-	/*border: 2px solid #efeef1;*/
-	border-radius: 5px;
+::-webkit-scrollbar-thumb {
+  background-color: #eee;
+  /*border: 2px solid #efeef1;*/
+  border-radius: 5px;
 }
 
 @keyframes FO {
-	0% {
-		color: transparent;
-		opacity: 0;
-		transform: translate(0, -10px);
-	}
-	15%, 80% {
-		color: black;
-		opacity: 1;
-		transform: translate(0, 0);
-	}
-	100% {
-		color: transparent;
-		opacity: 0;
-		transform: translate(0, -150%);
-	}
+  0% {
+    color: transparent;
+    opacity: 0;
+    transform: translate(0, -10px);
+  }
+  15%,
+  80% {
+    color: black;
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    color: transparent;
+    opacity: 0;
+    transform: translate(0, -150%);
+  }
 }
 
 #result {
-	width: 1100px;
-	height: 100px;
-	text-align: center;
-	display: block;
-	margin: auto;
-	position: absolute;
-	font-size: 36px;
-	font-family: 'Hanna';
-	line-height: 100px;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: white;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-	color: black;
-	opacity: 0;
+  width: 1100px;
+  height: 100px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  position: absolute;
+  font-size: 36px;
+  font-family: "Jua";
+  line-height: 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  color: black;
+  opacity: 0;
 }
+
 #result.out {
-	display: none;
+  display: none;
 }
 #result.play {
-	animation: FO 2s ease;
+  animation: FO 2s ease;
 }
