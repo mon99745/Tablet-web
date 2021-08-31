@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html lang="ko">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<html>
 <head>
     <meta charset="UTF-8">
     <title>단타포차에 오신걸 환영합니다.</title>
@@ -11,13 +12,13 @@
    <div id=tablet> 
       <div id=left-sidebar> <!--왼쪽 사이드 레이아웃-->
 
-         <button class=logo onclick="location.href('index.html')">
+         <button class=logo onclick="location.href('index.jsp')">
             <!--단타포차 로고-->
             <div class="neon">단타</div>
             <div class="neon2">포차</div>
          </button>
             <button type="button" class="mainBtn">
-               <a href="index.html">메인이동</a>
+               <a href="index.jsp">메인이동</a>
             </button>
       </div>
 

@@ -17,7 +17,7 @@ public class requestInput extends javax.servlet.http.HttpServlet implements java
 		  request.setCharacterEncoding("UTF-8");
 		  String id = request.getParameter("id");
 		  if(id == null || id.trim().length() == 0){
-		   response.sendRedirect("/Danta/songRequest.html");
+		   response.sendRedirect("/Danta/songRequest.jsp");
 		   
 		   return;
 		  }

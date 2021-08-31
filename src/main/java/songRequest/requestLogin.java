@@ -26,7 +26,7 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 	String id = request.getParameter("id");
 	//닉네임이 없으면 예외 발생
 	  if(id == null || id.trim().length() == 0){
-	   response.sendRedirect("/Danta/songRequest.html");
+	   response.sendRedirect("/Danta/songRequest.jsp");
 	   return;
 	  }
 	  

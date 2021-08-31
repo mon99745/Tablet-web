@@ -56,9 +56,9 @@ public class chatServlet  extends javax.servlet.http.HttpServlet implements java
 	  out.println("<body> "
 	  		+ "<div class=left-list>"
 	  		+ "<ul><li>"
-	  		+ "<button type=\"button\" id=\"tab1\" <a href=\"/index.html\">HOME</a></button>"
-	  		+ "<button type=\"button\" id=\"tab2\" <a href=\"/index.html\">채팅방</a></button>"
-	  		+ "<button type=\"button\" id=\"tab3\" <a href=\"index.html\">노래 신청</a></button>"
+	  		+ "<button type=\"button\" id=\"tab1\" <a href=\"/index.jsp\">HOME</a></button>"
+	  		+ "<button type=\"button\" id=\"tab2\" <a href=\"/index.jsp\">채팅방</a></button>"
+	  		+ "<button type=\"button\" id=\"tab3\" <a href=\"index.jsp\">노래 신청</a></button>"
 	  		+ "</li></ul></hr>"
 	  		+ "<c>");
 //	  메세지 창

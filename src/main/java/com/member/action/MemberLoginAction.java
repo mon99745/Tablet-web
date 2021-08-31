@@ -43,7 +43,7 @@ public class MemberLoginAction implements Action{
 			
 			ActionForward forward = new ActionForward();
 			//로그인 시 회원전용페이지로 이
-			forward.setPath("memberIndex.html");
+			forward.setPath("memberIndex.jsp");
 			forward.setRedirect(false);
 			return forward;
 		}

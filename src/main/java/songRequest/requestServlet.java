@@ -46,8 +46,8 @@ public class requestServlet  extends javax.servlet.http.HttpServlet implements j
 	  }
 	  PrintWriter out = response.getWriter();
 	  out.println("<html><head>");
-	  out .println("<link rel=\"stylesheet\" href=\"css/style.css\">");
-	  out .println("<link rel=\"stylesheet\" href=\"css/chat.css\">");
+	  out.println("<link rel=\"stylesheet\" href=\"css/style.css\">");
+	  out.println("<link rel=\"stylesheet\" href=\"css/chat.css\">");
 	  out.println("<meta http-equiv='pragma' content='no-cache'>");
 	  out.println("<meta http-equiv='cache-control' content='no-cache'>");
 	  out.println("<meta http-equiv='refresh'");

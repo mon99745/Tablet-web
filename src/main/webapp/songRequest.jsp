@@ -1,4 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -14,9 +15,9 @@
 
       <div id=middle> <!--가운데 레이아웃--> 
          <div class=middle-top>
-            <div class=logo href="index.html"> <!--단타포차 로고-->
+            <div class=logo href="index.jsp"> <!--단타포차 로고-->
                <button type="button" id="logo">
-                   <a href="index.html">Danta</a>
+                   <a href="index.jsp">Danta</a>
                </button>
            
                 </div>
