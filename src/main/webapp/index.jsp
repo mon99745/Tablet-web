@@ -30,7 +30,7 @@
                               로그인
                             </button>    
                         <li>
-                            <button type="button" id="sidebar" onclick="location.href='/basket/basketList.jsp'">
+                            <button type="button" id="sidebar" onclick="location.href='basket/basketList.jsp'">
                                 장바구니
                             </button>
                         <%-- <div class="modal">

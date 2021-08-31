@@ -10,7 +10,7 @@
 <body>
 <div id=tablet> 
       <div id=left-sidebar> <!--왼쪽 사이드 레이아웃-->
-         <button class="mainBtn" onClick="history.back();">◀︎</button >
+         <button class="mainBtn" onClick="history.back();">HOME</button >
       </div>
 
       <div id=middle> <!--가운데 레이아웃--> 

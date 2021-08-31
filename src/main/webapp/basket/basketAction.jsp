@@ -19,5 +19,5 @@ session.setAttribute("foodList", list); //food에 추가된 list 자체를 sessi
 %>
 <script>
     alert('<%=food%> 상품이 장바구니에 추가 되었습니다.');
-	location.href = '/Danta/index.jsp';
+	location.href = '/index.jsp';
 </script>

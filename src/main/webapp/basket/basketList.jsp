@@ -7,10 +7,18 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>장바구니</title>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/basket.css">
 </head>
 <body>
-<p>
+<div id=basket-tablet>
+    <div id=left-sidebar> <!--왼쪽 사이드 레이아웃-->
+
+              <button class="mainBtn" onClick="history.back();">HOME</button >
+            
+      </div>
+<div id=basket-middle style= "overflow-y: scroll">
 <%
 List<String> list = (List) (session.getAttribute("foodList"));
 if (list == null) { %>
@@ -19,7 +27,7 @@ if (list == null) { %>
 
 	<% }else {
 		for (String food : list) {
-		%><% 
+		%> <p id=list> <% 
 		System.out.println(food);
 		out.println(food); %> <br> <% //String 밖으로 내보내는 뜻
 		// 줄바꿈을 원할 경우 (food)안에 html 형식으로 작성
@@ -27,7 +35,12 @@ if (list == null) { %>
 	
 } 
 %>
+</div>
+<div id= basket-bottom>
+<p id=bottom>합계:</p> 
+</div>
 
-</p>
+<button id=order>주문하기</button>
+</div>
 </body>
 </html>
