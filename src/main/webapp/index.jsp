@@ -1,4 +1,5 @@
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!-- 이걸 설마모를리가? 닥치고 주석작성 -->
 <!-- CSS, JS 외부시트로 이동해서 작성  -->
 <!DOCTYPE html>
