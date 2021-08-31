@@ -12,7 +12,9 @@
 	text-align: center;
 	top: 0;
 	left: 0;
+	
 }
+
 .roulette
 {
 	margin-left: 100px;
@@ -31,6 +33,7 @@ ul {
 	height: 580px;
 	top: 120px;
 	left: 600px;
+	background: black;
 
 }
 
@@ -110,7 +113,7 @@ li.item>.item-title {
 	padding: 2px 15px;
 	white-space: nowrap;
 	overflow: hidden;
-
+	background: #eff0f1;
 	border-radius: 0px;
 
 	color: black;

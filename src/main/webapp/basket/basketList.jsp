@@ -14,7 +14,9 @@
 <%
 List<String> list = (List) (session.getAttribute("foodList"));
 if (list == null) { %>
+
 장바구니에 넣은 상품이 없습니다.
+
 	<% }else {
 		for (String food : list) {
 		%><% 

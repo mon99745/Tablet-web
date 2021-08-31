@@ -1,8 +1,9 @@
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+	
 <!-- 이걸 설마모를리가? 닥치고 주석작성 -->
 <!-- CSS, JS 외부시트로 이동해서 작성  -->
-<!DOCTYPE html>
-<html lang="ko">
+<html>
 <head>
 
     <meta charset="UTF-8">
@@ -15,7 +16,7 @@
     
     <div id=tablet> 
         <div id=left-sidebar> <!--왼쪽 사이드 레이아웃--> 
-            <div class=logo href="index.html"> <!--단타포차 로고-->
+            <div class=logo href="index.jsp"> <!--단타포차 로고-->
 <div class="neon">단타</div>
 <div class="neon2">포차</div>
             </div>
@@ -40,12 +41,12 @@
                         </li>
                     	<li>
 							<button type="button" id="sidebar">
-								<a href="chat.html">채팅</a>
+								<a href="chat.jsp">채팅</a>
 							</button>
 						</li>
 						<li>
 							<button type="button" id="sidebar">
-								<a href="chat.html">BGM 예약</a>
+								<a href="chat.jsp">BGM 예약</a>
 							</button>
 						</li>
                         <li>
@@ -62,7 +63,7 @@
                         </li>
                         <li>
                         <button type="button" id="sidebar">
-                            <a href="roulette.html">룰렛</a>
+                            <a href="roulette.jsp">룰렛</a>
                         </button>
                         </li>
                     </ul>

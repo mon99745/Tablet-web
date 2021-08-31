@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html lang="ko">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +17,7 @@
       <div id=left-sidebar> <!--왼쪽 사이드 레이아웃-->
 
             <button type="button" class="mainBtn">
-               <a href="index.html">메인이동</a>
+               <a href="index.jsp">메인이동</a>
             </button>
             
       </div>
@@ -27,7 +28,7 @@
          </div>
             <div class="wrap">
                
-               <canvas width="400" height="400" class="roulette">지원하지 않는 브라우저입니다. Google Chrome 최신 버전을 사용해주세요.</canvas>
+               <canvas  width="400" height="400" class="roulette">지원하지 않는 브라우저입니다. Google Chrome 최신 버전을 사용해주세요.</canvas>
                <div id="roll" class="button"></div>
             </div>
             <ul>

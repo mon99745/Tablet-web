@@ -66,7 +66,7 @@ var noname = '이름 없음';
 var font = '32px Hanna';
 var font2 = font; //'36px Sans-serif';
 var line_color = '#37474f';
-var bgColor = '#ffffff';
+var bgColor = 'transparent';
 var pinColor = '#37474f';
 var fontStrokeStyle = '#37474f';
 
@@ -220,7 +220,7 @@ function Roulette() {
 		try {
 
 			R.canvas = document.querySelector('canvas');
-			R.ctx = R.canvas.getContext('2d', true);
+			R.ctx = R.canvas.getContext('2d', true); 
 			R.size = { width: R.canvas.width, height: R.canvas.height };
 			R.center = { x: R.size.width / 2 , y: R.size.height / 2 };
 
@@ -315,7 +315,7 @@ function Roulette() {
 			R.buffer.lineWidth = 5;
 			R.buffer.strokeText(name, option.radius / 2, 8);
 			//R.buffer.fillStyle = window.line_color;
-			R.buffer.fillStyle = 'white';
+			R.buffer.fillStyle = 'black';
 			R.buffer.fillText(name, option.radius / 2, 8);
 
 			R.buffer.restore();
@@ -449,7 +449,7 @@ $(document).ready(function() {
 function lock(b) {
 	if (b) {
 		$('[contenteditable]').attr('contenteditable', false);
-		$('ul').addClass('lock');
+		$('ul')
 	} else {
 		$('[contenteditable]').attr('contenteditable', true);
 		$('ul').removeClass('lock');

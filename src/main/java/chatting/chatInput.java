@@ -17,7 +17,7 @@ public class chatInput extends javax.servlet.http.HttpServlet implements javax.s
 		  request.setCharacterEncoding("UTF-8");
 		  String id = request.getParameter("id");
 		  if(id == null || id.trim().length() == 0){
-		   response.sendRedirect("/chat.html");
+		   response.sendRedirect("/chat.jsp");
 		   return;
 		  }
 //		  id = myclasses.StringUtil.toHangul(id);
