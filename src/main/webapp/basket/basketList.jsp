@@ -29,7 +29,7 @@ if (list == null) { %>
 		for (String food : list) {
 		%> <p id=list> <% 
 		System.out.println(food);
-		out.println(food); %> <br> <% //String 밖으로 내보내는 뜻
+		out.println(food); %> :15900원 <br> <% //String 밖으로 내보내는 뜻
 		// 줄바꿈을 원할 경우 (food)안에 html 형식으로 작성
 	}
 	
@@ -37,7 +37,7 @@ if (list == null) { %>
 %>
 </div>
 <div id= basket-bottom>
-<p id=bottom>합계:</p> 
+<p id=bottom>합계: 15900원</p> 
 </div>
 
 <button id=order>주문하기</button>
