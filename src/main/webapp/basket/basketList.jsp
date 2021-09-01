@@ -114,12 +114,12 @@ if (list == null) {
 			<!-- <!-- <<<<< 이전 페이지>>>> -->
 
 		</div>
-		<div id=basket-bottom>
-		<div class="bigtext right-align box blue summoney">
-			<p id=bottom>합계:</p></div>
-		</div>
+		
+		<div id= basket-bottom>
+<p id=bottom>합계: 15,900</p> 
+</div>
 
-		<button id=order>주문하기</button>
-	</div>
+<button id=order>주문하기</button>
+</div>
 </body>
 </html>

@@ -71,6 +71,9 @@
   animation: flicker-box 3s infinite alternate;
 }
 
+p#bottom{
+  color: white;
+}
 #order {
   background-color: #ff0000bd;
   width: 150px;
