@@ -30,15 +30,15 @@
                               로그인
                             </button>    
                         <li>
-                            <button type="button" id="sidebar" onclick="location.href='basket/basketList.jsp'">
+                            <button type="button" id="sidebar" onclick="location.href='./basket/basketList.jsp'">
                                 장바구니
                             </button>
-                        <%-- <div class="modal">
+                        <!-- <div class="modal">
                             <div class="modal-content">
                                 <span class="close" id=baguni_close>&times;</span>
                                 <p>장바구니 Modal</p>
                             </div>
-                        </div> --%>
+                        </div> -->
                         </li>
                     	<li>
 							<button type="button" id="sidebar" onclick="location.href='chat.jsp'">
