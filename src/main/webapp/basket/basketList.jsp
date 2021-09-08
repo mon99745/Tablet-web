@@ -28,7 +28,7 @@ if (list == null) { %>
 	<% }else {
 		for (String food : list) {
 		%> <p id=list> <% 
-		System.out.println(food);
+		/* System.out.println(food); */
 		out.println(food); %> :15900원 <br> <% //String 밖으로 내보내는 뜻
 		// 줄바꿈을 원할 경우 (food)안에 html 형식으로 작성
 	}

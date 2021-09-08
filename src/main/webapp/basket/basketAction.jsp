@@ -5,7 +5,6 @@
 <%
 request.setCharacterEncoding("UTF-8");
 String food = request.getParameter("food") == null ? "" : request.getParameter("food");
-System.out.println("food"); // 데이터가 잘 넘어가는 지 확인 
 
 List list = (List)session.getAttribute("foodList"); // 데이터를 찍어줄때에는 session 객체 형변환 필요
 // "foodlist" 존재 여부 확인
