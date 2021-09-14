@@ -4,19 +4,19 @@
 <%@ page import="java.util.ArrayList"%>
 <%
 request.setCharacterEncoding("UTF-8");
-String food = request.getParameter("food") == null ? "" : request.getParameter("food");
+String product = request.getParameter("product") == null ? "" : request.getParameter("product");
 
-List list = (List)session.getAttribute("foodList"); // 데이터를 찍어줄때에는 session 객체 형변환 필요
+List<String> list = (List)session.getAttribute("productList"); // 데이터를 찍어줄때에는 session 객체 형변환 필요
 // "foodlist" 존재 여부 확인
 if (list == null) {
 	list = new ArrayList();
 	//list 안에 아무것도 없으면 List 생성
 }
-list.add(food);
+list.add(product);
 
-session.setAttribute("foodList", list); //food에 추가된 list 자체를 session에 담는다.
+session.setAttribute("productList", list); //food에 추가된 list 자체를 session에 담는다.
 %>
 <script>
-    alert('<%=food%> 상품이 장바구니에 추가 되었습니다.');
+    alert('<%=product%> 상품이 장바구니에 추가 되었습니다.');
 	location.href = '/Danta/index.jsp';
 </script>
