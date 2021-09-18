@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
 @WebServlet("/Cart")
 public class CartServlet extends HttpServlet{
 	
@@ -20,7 +19,7 @@ public class CartServlet extends HttpServlet{
 		String name = request.getParameter("name");
 		int price = Integer.parseInt(request.getParameter("price"));
 		
-		//세션에서 상품 리스트를 받아옴
+		//세션에서 상품 리스트를 받아옴 //세션생성
 		HttpSession session = request.getSession(true);
 		ArrayList<Products> gList = (ArrayList<Products>)session.getAttribute("list");
 		
@@ -33,12 +32,17 @@ public class CartServlet extends HttpServlet{
 		//세션에 리스트를 추가
 		session.setAttribute("list", gList);
 		
+		
 		//페이지 출력
 		response.setContentType("text/html;charset=utf-8");
 		PrintWriter out = response.getWriter();
 		
-		out.println("<html><body>");
-		out.println(name + " 구입하셨습니다");
+		out.println("<html><body><script>\n"
+//				+ "    alert('상품이 장바구니에 추가 되었습니다.');\n"
+				+ "	location.href = '/Danta/index.jsp';\n"
+				+ "</script>");
+		
+		
 		out.println("<p/><table width='80%'>");
 		out.println("<br/>[<a href='./index.jsp'>계속 쇼핑</a>]");
 		out.println("[<a href='Buy'>결제하기</a>]<br/>");

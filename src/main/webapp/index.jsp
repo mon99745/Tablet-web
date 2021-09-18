@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ page import = "java.util.List" %>
 <!-- 이걸 설마모를리가? 닥치고 주석작성 -->
 <!-- CSS, JS 외부시트로 이동해서 작성  -->
 <html>
@@ -37,7 +38,7 @@
                             </button>    
                         <li>
                             <button type="button" id="sidebar" onclick="location.href='./Buy'" >
-                                장바구니
+                                주문내역
                             </button>
                         </li>
                     	<li>
@@ -94,7 +95,7 @@
                     <ul>
                     <form action ="./Cart" name ="frm" method = "post">
                     
-                        <li><input type="hidden" name="name" value="곱도리탕"> <input type="hidden" name="price" value="15900"> <button type="submit" id="btnOk" ><img class="product" src ="image/곱도리탕.jpeg"></button><a>곱도리탕<br>15900원</a></li>
+                        <li><input type="hidden" name="name" value="곱도리탕"> <input type="hidden" name="price" value="15900"><button type="submit" class = "btn"><img class="product" src ="image/곱도리탕.jpeg"></button><a>곱도리탕<br>15900원</a></li>
                         <li><button type="submit" name ="product" value="곱창묵은지전골"><img class="product" src ="image/곱창묵은지전골.jpeg"></button><a>곱창묵은지전골<br>15900원</a></li>
                         <li><button type="submit" name ="product" value="나가사키탕"><img class="product" src ="image/나가사키탕.jpeg"></button><a>나가사키탕<br>15900원</a></li>
                         <li><button type="submit" name ="product" value="밀푀유나베"><img class="product" src ="image/밀푀유나베.jpeg"></button><a>밀푀유나베<br>15900원</a></li>
@@ -102,8 +103,7 @@
                         <li><button type="submit" name ="product" value="소불고기전골"><img class="product" src ="image/소불고기전골.jpeg"></button><a>소불고기전골<br>15900원</a></li>
                         <li><button type="submit" name ="product" value="어묵탕"><img class="product" src ="image/어묵탕.jpeg"></button><a>어묵탕<br>15900원</a></li>
                         <li><button type="submit" name ="product" value="제주화산전골"><img class="product" src ="image/제주화산전골.jpeg"></button><a>제주화산전골<br>15900원</a></li>
-                        <li><butto
-                        n type="submit" name ="product" value="차돌박이 짬뽕탕"><img class="product" src ="image/차돌박이 짬뽕탕.jpeg"></button><a>차돌박이 짬뽕탕<br>15900원</a></li>
+                        <li><button type="submit" name ="product" value="차돌박이 짬뽕탕"><img class="product" src ="image/차돌박이 짬뽕탕.jpeg"></button><a>차돌박이 짬뽕탕<br>15900원</a></li>
                         <li><button type="submit" name ="product" value="차돌박이김치찌개"><img class="product" src ="image/차돌박이김치찌개.jpeg"></button><a>차돌박이김치찌개<br>15900원</a></li>
                         <li><button type="submit" name ="product" value="크림짬뽕"><img class="product" src ="image/크림짬뽕.jpeg"></button><a>크림짬뽕<br>15900원</a></li>
                       
@@ -179,7 +179,30 @@
           
           
         </div>
+        <div class="modal">
+		<div class="modal-call">
+			<span id=call_close class="close">확인</span>
+			<p> 장바구니 자리 </p>
+			<%-- <%
+			List<Products> gList = (List<Products>) session.getAttribute("list");
+			response.setContentType("text/html; charset=utf-8"); //한글처리 
+			request.setCharacterEncoding("utf-8");
+			String name = request.getParameter("name");
+			int price = Integer.parseInt(request.getParameter("price"));
+			
+			int sum =0;
+			for (int i = 0; i < gList.size(); i++) {
+				Products goods =gList.get(i);
+				goods.getName(); 
+				goods.getPrice(); 
+			} %> 
+			--%>
+
+		</div>
+	</div>
+	
     </div>
+    
     <div id=right-sidebar> <!--오른쪽 사이드 레이아웃-->
             
         <div id=right-list >
