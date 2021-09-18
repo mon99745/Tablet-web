@@ -20,16 +20,16 @@
       </div>
 <div id=basket-middle style= "overflow-y: scroll">
 <%
-List<String> list = (List) (session.getAttribute("foodList"));
+List<String> list = (List) (session.getAttribute("productList"));
 if (list == null) { %>
 
 장바구니에 넣은 상품이 없습니다.
 
 	<% }else {
-		for (String food : list) {
+		for (String product : list) {
 		%> <p id=list> <% 
 		/* System.out.println(food); */
-		out.println(food); %> :15900원 <br> <% //String 밖으로 내보내는 뜻
+		out.println(product); %> :15900원 <br> <% //String 밖으로 내보내는 뜻
 		// 줄바꿈을 원할 경우 (food)안에 html 형식으로 작성
 	}
 	

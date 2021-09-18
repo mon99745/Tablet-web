@@ -29,8 +29,8 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 	   response.sendRedirect("/chat.jsp");
 	   return;
 	  }
-	  out.println("<html><div id = tablet>");
-	  out.println("<frameset rows='85%, 15%'>");
+	  out.println("<html>");
+	  out.println("<frameset rows='85%, 15%' id = tablet>");
 	  out.println("<frame src='./chatServlet?id=" + id + "&first=true' name='main'>");
 	  out.println("<frame src='./chatInput?id=" + id + "'>");
 	  out.println("</frameset>");
