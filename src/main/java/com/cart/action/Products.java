@@ -1,6 +1,6 @@
 package com.cart.action;
-
-public class Products { // 스프링 : pojo (객체단위처리를 위한 dto)
+//객체단위처리를 위한 dto
+public class Products {
 	private String name;
 	private int price;
 	
