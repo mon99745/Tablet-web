@@ -15,7 +15,9 @@ body {
   margin: 30px;
   background-color: black;
 }
-
+text{
+	color: #fff;
+}
 ul {
   list-style: none;
 }
@@ -385,6 +387,25 @@ ul {
   border: 3px solid #fff;
   text-align: center;
 }
+/* .modal-menu {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: flicker 150000000000s infinite alternate;
+  font-family: "Jua", sans-serif;
+  background: rgba(0, 0, 0, 0.829);
+  color: #fff;
+  padding: 80px 0;
+  font-size: 30px;
+  width: 600px;
+  height: 300px;
+  border-radius: 3rem;
+  border: 3px solid #fff;
+  text-align: center;
+} */
+
 #call_close {
   display: block;
   position: absolute;
@@ -414,4 +435,10 @@ ul {
   color: #fff;
   border: 1px black;
   box-shadow: black 2px;
+}
+p#login{
+	font-size: 20px;
+	font-family: "Jua", sans-serif;
+	text-transform: uppercase;
+	animation: flicker 3s infinite alternate;
 }

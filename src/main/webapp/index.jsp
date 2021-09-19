@@ -6,9 +6,7 @@
 <!-- 이걸 설마모를리가? 닥치고 주석작성 -->
 <!-- CSS, JS 외부시트로 이동해서 작성  -->
 <html>
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>단타포차에 오신걸 환영합니다.</title>
@@ -33,7 +31,7 @@
                               로그인
                             </button>    
                         <li>
-                            <button type="button" id="sidebar" onclick="location.href='./Buy'" >
+                            <button type="button" id="sidebar" onclick="location.href='cartOk.jsp'" >
                                 주문내역
                             </button>
                         </li>
@@ -173,10 +171,10 @@
                      </form>
                 </div>
           
-          
+          </div>
         </div>
-        <div class="modal">
-		<div class="modal-call">
+    	<div class="modal">
+		<div class="modal-content">
 			<span id=call_close class="close">확인</span>
 			<p>
 			<% 
@@ -191,11 +189,9 @@
 			%>
 			</p>
 			
-
 		</div>
 	</div>
-	
-    </div>
+    
     
     <div id=right-sidebar> <!--오른쪽 사이드 레이아웃-->
             
