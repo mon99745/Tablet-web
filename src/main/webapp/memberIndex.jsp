@@ -66,6 +66,7 @@
 
         <div id=middle> <!--가운데 레이아웃-->
             <div id="tabMenu" style= "overflow-y:scroll">
+           	<p id ="login">"닉네임" 님 환영합니다. </p>
             	<!--상단 메뉴 리스트-->
                 
                 <input type="radio" id="tab1" name="tabs" checked>
