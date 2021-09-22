@@ -47,7 +47,7 @@ public class CartBuyAction extends HttpServlet {
 		out.println("<tr><td colspan='2'>결제 총액 : " + sum + "</td></tr>");
 		out.println("</table>");
 		out.println("<br>고객님 감사합니다.");
-		out.println("<br/><a href='./index.jsp'>HOME</a>");
+		out.println("<br/><a href='./menu.jsp'>HOME</a>");
 		out.println("</body></html>");
 		// session.invalidate(); // 해당 고객의 모든 세션 삭제
 		session.removeAttribute("list"); // 상품목록 세션 삭제

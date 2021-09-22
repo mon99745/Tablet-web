@@ -43,7 +43,7 @@ public class CartServlet extends HttpServlet{
 		session.setAttribute("list", pList);
 		
 		//세션의 정보를 리다이렉트 응답
-		response.sendRedirect("index.jsp");
+		response.sendRedirect("menu.jsp");
 		
 //		
 //		
