@@ -16,7 +16,7 @@ public class MemberLogoutAction implements Action{
 		session.removeAttribute("id");
 		// 초기화면 복귀
 		ActionForward forward = new ActionForward();
-		forward.setPath("index.jsp");
+		forward.setPath("menu.jsp");
 		forward.setRedirect(true);
 		return forward;
 	}
