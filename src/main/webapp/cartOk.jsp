@@ -8,7 +8,7 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/style.css">
 
-<title>Cart OK</title>
+<title> 주문 내역 </title>
 </head>
 <body>
 	<div id=tablet>
@@ -18,7 +18,7 @@
 		if (list == null) {
 			out.print("주문이 완료된 상품이 없습니다.");
 			return;
-		}
+		}else{
 		%>
 		<p />
 		<table color="#fff" width='80%'>
@@ -29,7 +29,7 @@
 			<%
 			for (int i = 0; i < list.size(); i++) {
 				Products goods = (Products) list.get(i);
-				sum += goods.getPrice();
+				sum += goods.getPrice(); // 결제 총 금액 
 			%>
 			<tr>
 				<th><%=goods.getName()%></th> <!-- goods.getName() 상품이름  -->
@@ -59,7 +59,12 @@
 					<p>결제가 완료되었습니다.</p>
 				</div>
 			</div>
+			</table>
+			<%
+		}
+			%>
 			</div>
+			
 			<script src=js/modal.js></script>
 </body>
 </html>
