@@ -7,21 +7,29 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/login.css">
 
 <title> 주문 내역 </title>
 </head>
 <body>
 	<div id=tablet>
+		 <div id=left-sidebar> <!--왼쪽 사이드 레이아웃-->
+         <button class="mainBtn" onClick="history.back();">HOME</button >
+      </div>
 		<%
 		int sum = 0;
 		ArrayList list = (ArrayList) (session.getAttribute("list"));
-		if (list == null) {
-			out.print("주문이 완료된 상품이 없습니다.");
+		if (list == null) { %>
+		<div id=middle>
+		주문된 내역이 없습니다. 
+		</div>
+		<% 
 			return;
 		}else{
 		%>
+		<div id=middle>
 		<p />
-		<table color="#fff" width='80%'>
+		<table>
 			<tr>
 				<th>상품명</th>
 				<th>가격</th>
@@ -40,6 +48,8 @@
 			}
 			out.print("총 결제금액: " + sum + "</br>");
 			%>
+			</div>
+			<div id=right-sidebar> <!--오른쪽 사이드 레이아웃-->
 
 			<button type="button" class="btn">직원호출</button>
 			<div class="modal">
@@ -59,7 +69,9 @@
 					<p>결제가 완료되었습니다.</p>
 				</div>
 			</div>
+			</div>
 			</table>
+			
 			<%
 		}
 			%>

@@ -3,6 +3,7 @@
 <%@ page import = "java.util.List" %>
 <%@ page import="java.util.ArrayList"%>
 <%@ page import="com.cart.action.*"%>
+
 <!-- 이걸 설마모를리가? 닥치고 주석작성 -->
 <!-- CSS, JS 외부시트로 이동해서 작성  -->
 <html>
@@ -67,7 +68,7 @@
 
         <div id=middle> <!--가운데 레이아웃-->
             <div id="tabMenu" style= "overflow-y:scroll">
-            		<!--상단 메뉴 리스트-->
+            <!--상단 메뉴 리스트-->
                 
                 <input type="radio" id="tab1" name="tabs" checked>
                 <label for="tab1">탕</label>

@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>단타포차에 오신걸 환영합니다.</title>
-    <link rel="stylesheet" href="./css/sign-up.css">
+    <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="css/roulette.css">
    <script type="text/javascript" src="./lib/jquery-3.2.0.min.js"></script>
