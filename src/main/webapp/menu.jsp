@@ -28,7 +28,7 @@
             <div class=left-list> <!--=왼쪽 사이드 메뉴 리스트-->
                     <ul>
                         <li>
-                            <button type="button" id=sidebar onclick="location.href='loginForm.jsp'">
+                            <button type="button" id=sidebar onclick="location.href='member/loginForm.jsp'">
                               로그인
                             </button>    
                         <li>

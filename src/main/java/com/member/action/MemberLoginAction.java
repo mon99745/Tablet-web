@@ -14,11 +14,12 @@ import com.member.study.MemberDAO;
 import com.member.study.MemberDTO;
 
 public class MemberLoginAction implements Action{
+	
 	@Override
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		MemberDTO dto = new MemberDTO();
 		dto.setMember_id(request.getParameter("member_id"));
-		dto.setMember_pw(request.getParameter("member_pwd"));
+		dto.setMember_pwd(request.getParameter("member_pwd"));
 
 		MemberDAO dao = new MemberDAO();
 		int result = dao.isMember(dto);
@@ -37,15 +38,16 @@ public class MemberLoginAction implements Action{
 				out.println("location.href = 'memberLogin.me';");
 			out.println("</script>");
 			return null;
-		} else {	//로그인 성공
+		} else {//로그인 성공
 			HttpSession session = request.getSession();
 			session.setAttribute("id", dto.getMember_id()); //바인딩 객체
 			
 			ActionForward forward = new ActionForward();
-			//로그인 시 회원전용페이지로 이
+			//로그인 시 회원전용페이지로 이동 
 			forward.setPath("memberIndex.jsp");
 			forward.setRedirect(false);
 			return forward;
+			
 		}
 	}
 }

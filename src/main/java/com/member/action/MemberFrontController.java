@@ -23,16 +23,17 @@ public class MemberFrontController extends HttpServlet{
 		Action action = null;
 		ActionForward forward = null;
 		
+		
 		if(command.equals("/memberLogin.me")) {
 			forward = new ActionForward();
-			forward.setPath("loginForm.jsp");
+			forward.setPath("member/loginForm.jsp");
 			forward.setRedirect(false);
 		} else if(command.equals("/memberLoginAction.me")) {
 			action = new MemberLoginAction();
 			forward = action.execute(request, response);
 		} else if(command.equals("/memberJoin.me")) {
 			forward = new ActionForward();
-			forward.setPath("/loginForm.jsp");
+			forward.setPath("member/joinForm.jsp");
 			forward.setRedirect(false);
 		} else if(command.equals("/memberJoinAction.me")) {
 			action = new MemberJoinAction();
@@ -40,7 +41,24 @@ public class MemberFrontController extends HttpServlet{
 		} else if(command.equals("/memberLogout.me")) {
 			action = new MemberLogoutAction();
 			forward = action.execute(request, response);
+		} else if(command.equals("/memberListAction.me")) {
+			action = new MemberListAction();
+			forward = action.execute(request, response);
+		} else if(command.equals("/memberDeleteAction.me")) {
+			action = new MemberDeleteAction();
+			forward = action.execute(request, response);
+		} else if(command.equals("/memberViewAction.me")) {
+			action = new MemberViewAction();
+			forward = action.execute(request, response);
+		} else if(command.equals("/memberDetailAction.me")) {
+			action = new MemberDetailAction();
+			forward = action.execute(request, response);
+		} else if(command.equals("/memberUpdateAction.me")) {
+			action = new MemberUpdateAction();
+			forward = action.execute(request, response);
 		}
+
+		
 		if(forward != null) {
 			if(forward.isRedirect()) {	//true : sendRedirect() 전환
 				response.sendRedirect(forward.getPath());
