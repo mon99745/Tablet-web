@@ -15,6 +15,7 @@ import com.member.study.MemberDAO;
 import com.member.study.MemberDTO;
 
 public class MemberDeleteAction implements Action {
+	
 	@Override
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
