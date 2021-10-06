@@ -34,7 +34,7 @@ MemberDTO dto = (MemberDTO) request.getAttribute("dto");
 			<td><%=dto.getMember_name() %></td>
 		</tr>
 		<tr>
-			<th>나이</th>
+			<th>생년월일</th>
 			<td><%=dto.getMember_birthday() %></td>
 		</tr>
 		<tr>
@@ -42,9 +42,9 @@ MemberDTO dto = (MemberDTO) request.getAttribute("dto");
 			<td><%=dto.getMember_gender() %></td>
 		</tr>
 		<tr>
-			<th>이메일</th>
+			<th>휴대폰 번호</th>
 			<%if(dto.getMember_phone() == null) { %>
-				<td>이메일이 등록되지 않았습니다.</td>
+				<td>휴대폰 번호가 입력되지 않았습니다.</td>
 			<%} else { %>
 				<td><%=dto.getMember_phone() %></td>
 			<%} %>

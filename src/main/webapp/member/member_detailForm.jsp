@@ -29,7 +29,7 @@ function fnSubmit() {
 			</tr>
 			<tr>
 				<th>비밀번호</th>
-				<td><input type="password" name="member_pw" value="<%=dto.getMember_pwd() %>" /></td>
+				<td><input type="password" name="member_pwd" value="<%=dto.getMember_pwd() %>" /></td>
 			</tr>
 			<tr>
 				<th>이름</th>
@@ -37,7 +37,7 @@ function fnSubmit() {
 			</tr>
 			<tr>
 				<th>생년월일</th>
-				<td><input type="number" name="member_age" value="<%=dto.getMember_birthday() %>" /></td>
+				<td><input type="number" name="member_birthday" value="<%=dto.getMember_birthday() %>" /></td>
 			</tr>
 			<tr>
 				<th>성별</th>
