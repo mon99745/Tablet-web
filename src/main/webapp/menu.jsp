@@ -28,7 +28,7 @@
             <div class=left-list> <!--=왼쪽 사이드 메뉴 리스트-->
                     <ul>
                         <li>
-                            <button type="button" id=sidebar onclick="location.href='member/loginForm.jsp'">
+                            <button type="button" id=sidebar onclick="location.href='memberLogin.me'">
                               로그인
                             </button>    
                         <li>
@@ -160,7 +160,8 @@
                 <div id="alcohol" class="tabimage" style= "overflow-y: scroll">
                     <h2>술이들어간다 쭉쭉~</h2>
                     <form action ="./basket/basketAction.jsp" method = "get">
-                    <ul> <li><button type="img" name ="product" value="진로"><img class="product" src ="image/진로.gif"></button><a>진로<br>4500원</a></li>
+                    <ul> 
+                    	<li><button type="img" name ="product" value="진로"><img class="product" src ="image/진로.gif"></button><a>진로<br>4500원</a></li>
                         <li><button type="img" name ="product" value="처음처럼"><img class="product" src ="image/처음처럼.gif"></button><a>처음처럼<br>4500원</a></li>
                         <li><button type="img" name ="product" value="참이슬"><img class="product" src ="image/참이슬.gif"></button><a>참이슬<br>4500원</a></li>
                         <li><button type="img" name ="product" value="테라"><img class="product" src ="image/테라.gif"></button><a>테라<br>4500원</a></li>

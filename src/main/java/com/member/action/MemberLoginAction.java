@@ -34,14 +34,12 @@ public class MemberLoginAction implements Action{
 			out.println("</script>");
 			return null;
 		} else if(result == -1) {
-			System.out.println("log2");
 			out.println("<script>");
 				out.println("alert('아이디가 존재하지 않습니다!');");
 				out.println("location.href = 'memberLogin.me';");
 			out.println("</script>");
 			return null;
 		} else {//로그인 성공
-			System.out.println("log");
 			HttpSession session = request.getSession();
 			session.setAttribute("id", dto.getMember_id()); //바인딩 객체
 			

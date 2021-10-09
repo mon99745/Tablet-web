@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>단타포차에 오신걸 환영합니다.</title>
-    <link rel="stylesheet" href="../css/login.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type ="text/css" href="css/login.css">
+    <link rel="stylesheet" type ="text/css" href="css/style.css">
 </head>
 
 <body>
    <div id=tablet> 
       <div id=left-sidebar> <!--왼쪽 사이드 레이아웃-->
-         <button class="mainBtn" onClick="history.back();">HOME</button >
+         <button class="mainBtn" onClick="menu.jsp">HOME</button >
          
       </div>
 
