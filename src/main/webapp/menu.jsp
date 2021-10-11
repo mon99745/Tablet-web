@@ -37,7 +37,7 @@
                             </button>
                         </li>
                     	<li>
-							<button type="button" id="sidebar" onclick="location.href='chat.jsp'">
+							<button type="button" id="sidebar" onclick="location.href='/Danta/chat/chatForm.jsp'">
 								채팅
 							</button>
 						</li>

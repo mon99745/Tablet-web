@@ -4,8 +4,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>단타포차에 오신걸 환영합니다.</title>
-<link rel="stylesheet" href="css/login.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="../css/login.css">
+<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 <div id=tablet> 
@@ -24,7 +24,7 @@
          </div>
          <div class="login-page">
             <div class="form">
-              <form class="login-form" action="chatLogin" method="post">
+              <form class="login-form" action="chat.jsp" method="post">
                 <input type="text" name="id" placeholder="닉네임을 입력해주세요. ex) 테이블 번호"/>
                 <button type="submit">입장하기</button>
               </form>
