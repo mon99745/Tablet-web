@@ -87,9 +87,8 @@
                 <div id="tang" class="tabimage" style= "overflow-y: scroll"> <!--메뉴 이미지-->
                     
                     <h2>보글보글 탕탕탕!</h2>
+                    <form action ="Cart" method = "post">
                     <ul>
-                    <form action ="./Cart" method = "post">
-                    
                         <li><input type="hidden" name="product" value="곱도리탕"> <input type="hidden" name="price" value="15900"><button type="submit" class = "btn"><img class="product" src ="image/곱도리탕.jpeg"></button><a>곱도리탕<br>15900원</a></li>
                         <li><input type="hidden" name="product" value="곱창묵은지전골"><input type="hidden" name="price" value="15900"><button type="submit" class = "btn"><img class="product" src ="image/곱창묵은지전골.jpeg"></button><a>곱창묵은지전골<br>15900원</a></li>
                         <li><input type="hidden" name="product" value="나가사키탕"> <input type="hidden" name="price" value="15900"><button type="submit" class = "btn"><img class="product" src ="image/나가사키탕.jpeg"></button><a>나가사키탕<br>15900원</a></li>
@@ -101,74 +100,73 @@
                         <li><input type="hidden" name="product" value="차돌박이 짬뽕탕"> <input type="hidden" name="price" value="15900"><button type="submit" class = "btn"><img class="product" src ="image/차돌박이 짬뽕탕.jpeg"></button><a>차돌박이 짬뽕탕<br>15900원</a></li>
                         <li><input type="hidden" name="product" value="차돌박이김치찌개"> <input type="hidden" name="price" value="15900"><button type="submit" class = "btn"><img class="product" src ="image/차돌박이김치찌개.jpeg"></button><a>차돌박이김치찌개<br>15900원</a></li>
                         <li><input type="hidden" name="product" value="크림짬뽕"> <input type="hidden" name="price" value="15900"><button type="submit" class = "btn"><img class="product" src ="image/크림짬뽕.jpeg"></button><a>크림짬뽕<br>15900원</a></li>
-                      
-                      
+                   </ul>
                     </form>
-                    </ul>
                 </div>
+                
                 <div id="stir-fry" class="tabimage" style= "overflow-y: scroll">
                     <h2>볶으면 뭔들...</h2>
-                    <form action ="./basket/basketAction.jsp" method = "get">
+                    <form action ="Cart" method = "post">
                     <ul>
-                        <li><button type="img" name ="product" value="해물볶음우동"><img class="product" src ="image/해물볶음우동.jpeg"></button><a>해물볶음우동<br>15900원</a></li>
-                        <li><button type="img" name ="product" value="쭈꾸미볶음"><img class="product" src ="image/쭈꾸미볶음.jpeg"></button><a>쭈꾸미볶음<br>15900원</a></li>
-                        <li><button type="img" name ="product" value="차돌박이 숙주볶음"><img class="product" src ="image/차돌박이 숙주볶음.jpeg"></button><a>차돌박이 숙주볶음<br>15900원</a></li>
-                        <li><button type="img" name ="product" value="매콤무뼈닭발"><img class="product" src ="image/매콤무뼈닭발.jpeg"></button><a>매콤무뼈닭발<br>15900원</a></li>
-                        <li><button type="img" name ="product" value="우삼겹 숙주볶음"><img class="product" src ="image/우삼겹 숙주볶음.jpeg"></button><a>우삼겹 숙주볶음<br>15900원</a></li>
+                        <li><input type="hidden" name="product" value="해물볶음우동"> <input type="hidden" name="price" value="15900"><button type="submit" name ="product" value="해물볶음우동"><img class="product" src ="image/해물볶음우동.jpeg"></button><a>해물볶음우동<br>15900원</a></li>
+                        <li><input type="hidden" name="product" value="쭈꾸미볶음"> <input type="hidden" name="price" value="15900"><button type="submit" name ="product" value="쭈꾸미볶음"><img class="product" src ="image/쭈꾸미볶음.jpeg"></button><a>쭈꾸미볶음<br>15900원</a></li>
+                        <li><input type="hidden" name="product" value="차돌박이 숙주볶음"> <input type="hidden" name="price" value="15900"><button type="submit" name ="product" value="차돌박이 숙주볶음"><img class="product" src ="image/차돌박이 숙주볶음.jpeg"></button><a>차돌박이 숙주볶음<br>15900원</a></li>
+                        <li><input type="hidden" name="product" value="매콤무뼈닭발"> <input type="hidden" name="price" value="15900"><button type="submit" name ="product" value="매콤무뼈닭발"><img class="product" src ="image/매콤무뼈닭발.jpeg"></button><a>매콤무뼈닭발<br>15900원</a></li>
+                        <li><input type="hidden" name="product" value="우삼겹 숙주볶음"> <input type="hidden" name="price" value="15900"><button type="submit" name ="product" value="우삼겹 숙주볶음"><img class="product" src ="image/우삼겹 숙주볶음.jpeg"></button><a>우삼겹 숙주볶음<br>15900원</a></li>
                        
                     </ul>
  					</form>
                 </div>
+                
                 <div id="delicacy" class="tabimage" style= "overflow-y: scroll">
                     <h2>별미</h2>
-                    <form action ="./basket/basketAction.jsp" method = "get">
+                    <form action ="Cart" method = "post">
                     <ul>
-                        <li><button type="img" name ="product" value="신당동 명량떡볶이"><img class="product" src ="image/신당동 명량떡볶이.jpeg"></button><a>신당동 명량떡볶이<br>15900원</a></li>
-                        <li><button type="img" name ="product" value="차돌냉채"><img class="product" src ="image/차돌냉채.jpeg"></button><a>차돌냉채<br>15900원</a></li>
-                        <li><button type="img" name ="product" value="국물 닭발"><img class="product" src ="image/국물 닭발.jpeg"></button><a>국물 닭발<br>15900원</a></li>
-                        <li><button type="img" name ="product" value="종로 육회 한 쌈"><img class="product" src ="image/종로 육회 한 쌈.jpeg"></button><a>종로 육회 한 쌈<br>15900원</a></li>
-                        <li><button type="img" name ="product" value="담양숯불갈비"><img class="product" src ="image/담양숯불갈비.jpeg"></button><a>담양숯불갈비<br>15900원</a></li>
-                        <li><button type="img" name ="product" value="감바스"><img class="product" src ="image/감바스.jpeg"></button><a>감바스<br>15900원</a></li>
-                        <li><button type="img" name ="product" value="차돌박이 두부김치"><img class="product" src ="image/차돌박이 두부김치.jpeg"></button><a>차돌박이 두부김치<br>15900원</a></li>
-                       
-				
+                        <li><input type="hidden" name="product" value="신당동 명량떡볶이"> <input type="hidden" name="price" value="15900"><button type="submit" name ="product" value="신당동 명량떡볶이"><img class="product" src ="image/신당동 명량떡볶이.jpeg"></button><a>신당동 명량떡볶이<br>15900원</a></li>
+                        <li><input type="hidden" name="product" value="차돌냉채"> <input type="hidden" name="price" value="15900"><button type="submit" name ="product" value="차돌냉채"><img class="product" src ="image/차돌냉채.jpeg"></button><a>차돌냉채<br>15900원</a></li>
+                        <li><input type="hidden" name="product" value="국물 닭발"> <input type="hidden" name="price" value="15900"><button type="submit" name ="product" value="국물 닭발"><img class="product" src ="image/국물 닭발.jpeg"></button><a>국물 닭발<br>15900원</a></li>
+                        <li><input type="hidden" name="product" value="종로 육회 한 쌈"> <input type="hidden" name="price" value="15900"><button type="submit" name ="product" value="종로 육회 한 쌈"><img class="product" src ="image/종로 육회 한 쌈.jpeg"></button><a>종로 육회 한 쌈<br>15900원</a></li>
+                        <li><input type="hidden" name="product" value="담양숯불갈비"> <input type="hidden" name="price" value="15900"><button type="submit" name ="product" value="담양숯불갈비"><img class="product" src ="image/담양숯불갈비.jpeg"></button><a>담양숯불갈비<br>15900원</a></li>
+                        <li><input type="hidden" name="product" value="감바스"> <input type="hidden" name="price" value="15900"><button type="submit" name ="product" value="감바스"><img class="product" src ="image/감바스.jpeg"></button><a>감바스<br>15900원</a></li>
+                        <li><input type="hidden" name="product" value="차돌박이 두부김치"> <input type="hidden" name="price" value="15900"><button type="submit" name ="product" value="차돌박이 두부김치"><img class="product" src ="image/차돌박이 두부김치.jpeg"></button><a>차돌박이 두부김치<br>15900원</a></li>
                     </ul>
                      </form>
                 </div>
+                
                 <div id="salad" class="tabimage" style= "overflow-y: scroll">
                     <h2>샐러드</h2>
-                    <form action ="./basket/basketAction.jsp" method = "get">
+                    <form action ="Cart" method = "post">
                     <ul>
-                        <li><button type="img" name ="product" value="차돌박이 부추샐러드"><img class="product" src ="image/차돌박이 부추샐러드.jpeg"></button><a>차돌박이 부추샐러드<br>15900원</a></li>
-                        <li><button type="img" name ="product" value="과일샐러드"><img class="product" src ="image/과일샐러드.jpeg"></button><a>과일샐러드<br>15900원</a></li>
-                        <li><button type="img" name ="product" value="생 연어 샐러드"><img class="product" src ="image/생 연어 샐러드.jpeg"></button><a>생 연어 샐러드<br>15900원</a></li>
-                        <li><button type="img" name ="product" value="케이준 샐러드"><img class="product" src ="image/케이준 샐러드.jpeg"></button><a>케이준 샐러드<br>15900원</a></li>
+                        <li><input type="hidden" name="product" value="차돌박이 부추샐러드"> <input type="hidden" name="price" value="15900"><button type="submit" name ="product" value="차돌박이 부추샐러드"><img class="product" src ="image/차돌박이 부추샐러드.jpeg"></button><a>차돌박이 부추샐러드<br>15900원</a></li>
+                        <li><input type="hidden" name="product" value="과일샐러드"> <input type="hidden" name="price" value="15900"><button type="submit" name ="product" value="과일샐러드"><img class="product" src ="image/과일샐러드.jpeg"></button><a>과일샐러드<br>15900원</a></li>
+                        <li><input type="hidden" name="product" value="생 연어 샐러드"> <input type="hidden" name="price" value="15900"><button type="submit" name ="product" value="생 연어 샐러드"><img class="product" src ="image/생 연어 샐러드.jpeg"></button><a>생 연어 샐러드<br>15900원</a></li>
+                        <li><input type="hidden" name="product" value="케이준 샐러드"> <input type="hidden" name="price" value="15900"><button type="submit" name ="product" value="케이준 샐러드"><img class="product" src ="image/케이준 샐러드.jpeg"></button><a>케이준 샐러드<br>15900원</a></li>
                         
                 </ul>
                  </form>
                 </div>
+                
                 <div id="soda" class="tabimage">
                     <h2>톡 쏘는 음료!</h2>
-                    <form action ="./basket/basketAction.jsp" method = "get">
+                    <form action ="Cart" method = "post">
                     <ul>
-                        <li><button type="img" name ="product" value="코카콜라"><img class="product" src ="image/코카콜라.jpeg"></button><a>코카콜라<br>2000원</a></li>
-                        <li><button type="img" name ="product" value="환타오렌지"><img class="product" src ="image/환타오렌지.jpeg"></button><a>환타오렌지<br>2000원</a></li>
-                        <li><button type="img" name ="product" value="사이다"><img class="product" src ="image/사이다.jpeg"></button><a>사이다<br>2000원</a></li>
+                        <li><input type="hidden" name="product" value="코카콜라"> <input type="hidden" name="price" value="15900"><button type="submit" name ="product" value="코카콜라"><img class="product" src ="image/코카콜라.jpeg"></button><a>코카콜라<br>2000원</a></li>
+                        <li><input type="hidden" name="product" value="환타오렌지"> <input type="hidden" name="price" value="15900"><button type="submit" name ="product" value="환타오렌지"><img class="product" src ="image/환타오렌지.jpeg"></button><a>환타오렌지<br>2000원</a></li>
+                        <li><input type="hidden" name="product" value="사이다"> <input type="hidden" name="price" value="15900"><button type="submit" name ="product" value="사이다"><img class="product" src ="image/사이다.jpeg"></button><a>사이다<br>2000원</a></li>
                     </ul>
+                    </form>
                 </div>
           
                 <div id="alcohol" class="tabimage" style= "overflow-y: scroll">
                     <h2>술이들어간다 쭉쭉~</h2>
-                    <form action ="./basket/basketAction.jsp" method = "get">
+                    <form action ="Cart" method = "post">
                     <ul> 
-                    	<li><button type="img" name ="product" value="진로"><img class="product" src ="image/진로.gif"></button><a>진로<br>4500원</a></li>
-                        <li><button type="img" name ="product" value="처음처럼"><img class="product" src ="image/처음처럼.gif"></button><a>처음처럼<br>4500원</a></li>
-                        <li><button type="img" name ="product" value="참이슬"><img class="product" src ="image/참이슬.gif"></button><a>참이슬<br>4500원</a></li>
-                        <li><button type="img" name ="product" value="테라"><img class="product" src ="image/테라.gif"></button><a>테라<br>4500원</a></li>
-                        <li><button type="img" name ="product" value="살얼음맥주"><img class="product" src ="image/살얼음맥주.gif"></button><a>살얼음맥주 500ml<br>3000원</a></li>
-                        <li><button type="img" name ="product" value="살얼음맥주"><img class="product" src ="image/살얼음맥주.gif"></button><a>살얼음맥주 330ml<br>2500원</a></li>
-                       
-
+                    	<li><input type="hidden" name="product" value="진로"> <input type="hidden" name="price" value="15900"><button type="submit" name ="product" value="진로"><img class="product" src ="image/진로.gif"></button><a>진로<br>4500원</a></li>
+                        <li><input type="hidden" name="product" value="처음처럼"> <input type="hidden" name="price" value="15900"><button type="submit" name ="product" value="처음처럼"><img class="product" src ="image/처음처럼.gif"></button><a>처음처럼<br>4500원</a></li>
+                        <li><input type="hidden" name="product" value="참이슬"> <input type="hidden" name="price" value="15900"><button type="submit" name ="product" value="참이슬"><img class="product" src ="image/참이슬.gif"></button><a>참이슬<br>4500원</a></li>
+                        <li><input type="hidden" name="product" value="테라"> <input type="hidden" name="price" value="15900"><button type="submit" name ="product" value="테라"><img class="product" src ="image/테라.gif"></button><a>테라<br>4500원</a></li>
+                        <li><input type="hidden" name="product" value="살얼음맥주 500ml"> <input type="hidden" name="price" value="15900"><button type="submit" name ="product" value="살얼음맥주 500ml"><img class="product" src ="image/살얼음맥주.gif"></button><a>살얼음맥주 500ml<br>3000원</a></li>
+                        <li><input type="hidden" name="product" value="살얼음맥주 300ml"> <input type="hidden" name="price" value="15900"><button type="submit" name ="product" value="살얼음맥주 300ml"><img class="product" src ="image/살얼음맥주.gif"></button><a>살얼음맥주 330ml<br>2500원</a></li>
                     </ul>
                      </form>
                 </div>
@@ -187,7 +185,15 @@
 				out.print("음식명 : "+goods.getName()+"&nbsp&nbsp;");
 				out.print("가격 : "+goods.getPrice()+"원</br>");
 					 
-				} 
+				}
+			
+			if(session != null) {
+			  // 세션 속성 삭제하기
+			  session.removeAttribute("product");
+			  session.removeAttribute("price");
+			}
+			  
+			
 			%>
 			</p>
 			

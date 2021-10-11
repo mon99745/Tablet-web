@@ -34,21 +34,7 @@ public class CartBuyAction extends HttpServlet {
 		response.setContentType("text/html; charset=utf-8");
 
 		PrintWriter out = response.getWriter();
-		out.println("<html><body>");
-		out.println("<p/><table width='80%'>");
-		out.println("<tr><th>상품명</th><th>가격</th></tr>");
-		// 상품명과 총 계산 금액 계산
-		int sum = 0;
-		for (Products goods : gList) {
-			out.println("<tr><td>" + goods.getName() + "</td>");
-			out.println("<td>" + goods.getPrice() + "</td></tr>");
-			sum += goods.getPrice();
-		}
-		out.println("<tr><td colspan='2'>결제 총액 : " + sum + "</td></tr>");
-		out.println("</table>");
-		out.println("<br>고객님 감사합니다.");
-		out.println("<br/><a href='./menu.jsp'>HOME</a>");
-		out.println("</body></html>");
+				
 		// session.invalidate(); // 해당 고객의 모든 세션 삭제
 		session.removeAttribute("list"); // 상품목록 세션 삭제
 		out.close();

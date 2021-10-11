@@ -322,6 +322,25 @@ ul {
   color: #fff;
   text-transform: uppercase;
 }
+.right-list ul li button {
+  float: left;
+  text-align: center;
+  width: 130px;
+  height: 60px;
+  padding: 20px;
+  margin: 6px;
+  margin-left: 15px;
+  border-radius: 10px;
+  font-family: "Jua", sans-serif;
+  text-transform: uppercase;
+  animation: flicker-box 1.5s infinite alternate;
+  background-color: transparent;
+  font-size: 20px;
+  font-family: "Jua", sans-serif;
+  border: 3px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+}
 
 #logo {
   background-color: transparent;
