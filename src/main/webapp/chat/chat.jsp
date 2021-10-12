@@ -3,9 +3,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Web Socket Example</title>
+<title>단타포차에 오신걸 환영합니다.</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
+<div id=tablet>
+	<div id=left-sidebar> <!--왼쪽 사이드 레이아웃-->
+         <button class="mainBtn" onClick="/Danta/menu.jsp">HOME</button >
+      </div>
+      
+    <div id=middle> <!--가운데 레이아웃--> 
+         <div class=middle-top>
+            <div class=logo href="/Danta/menu.jsp"> <!--단타포차 로고-->
+               <button type="button" id="logo">
+                   <a href="menu.jsp">Danta</a>
+               </button>
+           
+                </div>
+         </div>
 	<br />
 	<!-- 콘솔 메시지의 역할을 하는 로그 텍스트 에리어.(수신 메시지도 표시한다.) -->
 	<textarea id="messageTextArea" rows="20" cols="60"></textarea>
@@ -55,8 +71,13 @@
 	<form>
 		<input id="user" type="text" value="name"> <!-- 유저명 박스 -->
 		<input id="textMessage" type="text"> <!-- 메시지 박스 -->
-		<input onclick="sendMessage()" value="Send" type="button"> <!-- 메시지 송신버튼 -->
-		<input onclick="disconnect()" value="Disconnect" type="button"> <!-- 종료버튼 -->
+		<input onclick="sendMessage()" value="보내기" type="button"> <!-- 메시지 송신버튼 -->
+		<input onclick="disconnect()" value="연결해제" type="button"> <!-- 종료버튼 -->
 	</form>
+	</div>
+	<div id=right-sidebar> <!--오른쪽 사이드 레이아웃-->
+	
+   </div>
+</div>
 </body>
 </html>

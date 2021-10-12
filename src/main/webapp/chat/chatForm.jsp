@@ -15,7 +15,7 @@
 
       <div id=middle> <!--가운데 레이아웃--> 
          <div class=middle-top>
-            <div class=logo href="menu.jsp"> <!--단타포차 로고-->
+            <div class=logo href="../menu.jsp"> <!--단타포차 로고-->
                <button type="button" id="logo">
                    <a href="menu.jsp">Danta</a>
                </button>
