@@ -9,16 +9,16 @@
 <meta charset="UTF-8">
 <title>장바구니</title>
 <link rel="stylesheet" href="/Danta/css/style.css">
-<link rel="stylesheet" href="/Danta/css/basket.css">
+<link rel="stylesheet" href="/Danta/css/cart.css">
 </head>
 <body>
-<div id=basket-tablet>
+<div id=cart-tablet>
     <div id=left-sidebar> <!—왼쪽 사이드 레이아웃—>
 
               <button class="mainBtn" onClick="history.back();">HOME</button >
             
       </div>
-<div id=basket-middle style= "overflow-y: scroll">
+<div id=cart-middle style= "overflow-y: scroll">
 <%
 List<String> list = (List) (session.getAttribute("productList"));
 if (list == null) { %>
@@ -36,7 +36,7 @@ if (list == null) { %>
 } 
 %>
 </div>
-<div id= basket-bottom>
+<div id= cart-bottom>
 <p id=bottom>합계: 15900원</p> 
 </div>
 

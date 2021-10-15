@@ -1,13 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@page import="java.util.ArrayList"%>
+<%@ page import="java.util.ArrayList"%>
 <%@ page import="com.cart.action.*"%>
 <!DOCTYPE html>
-<html>
+<html lang =ko>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" type = text/css href="css/style.css">
+<link rel="stylesheet" type = text/css href="css/cart.css">
 <% int sum = 0;
 ArrayList list = (ArrayList) (session.getAttribute("list"));
 %>
@@ -20,17 +20,19 @@ ArrayList list = (ArrayList) (session.getAttribute("list"));
          
       </div>
 		
-		<div id=middle> <!-- 중앙 레이아웃 -->
+		<div id=cart-middle> <!-- 중앙 레이아웃 -->
 		<p/>
-		<table>
 		<%
 		
 		if (list == null) { %>
+		<div class="tabMenuCart">
 		<h2>주문된 내역이 없습니다.</h2> 
+		</div>
 		<% 
 			return;
 		}else{
 		%>
+		<table>
 			<tr>
 				<th>상품명</th>
 				<th>가격</th>
@@ -52,7 +54,7 @@ ArrayList list = (ArrayList) (session.getAttribute("list"));
 			</table>
 		</div> <!-- middle end -->
 		
-			<div id=right-sidebar> <!--오른쪽 사이드 레이아웃-->
+			<div id=cart-bottom> <!--오른쪽 사이드 레이아웃-->
 		<ul>
 			<li>
 			<button type="button" id="sidebar" class="btn">직원호출</button>

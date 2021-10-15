@@ -6,19 +6,19 @@
 
 <!-- 이걸 설마모를리가? 닥치고 주석작성 -->
 <!-- CSS, JS 외부시트로 이동해서 작성  -->
-<html>
+<html lang =ko>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>단타포차에 오신걸 환영합니다.</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type = text/css href="css/style.css">
     
 </head>
 <body>
     
     <div id=tablet> 
         <div id=left-sidebar> <!--왼쪽 사이드 레이아웃--> 
-            <div class=logo href="menu.jsp"> <!--단타포차 로고-->
+            <div class=logo> <!--단타포차 로고-->
                 <button type="button" id="logo">
                     <a href="menu.jsp">Danta</a>
                 </button>
@@ -177,7 +177,7 @@
 		<div class="modal-content">
 			<span id=call_close class="close">확인</span>
 			<p>
-			<% 
+			<%-- <% 
 			ArrayList list = (ArrayList)(session.getAttribute("list"));
 			
 			for (int i = 0; i < list.size(); i++) {
@@ -194,7 +194,7 @@
 			}
 			  
 			
-			%>
+			%> --%>
 			</p>
 			
 		</div>
@@ -212,7 +212,7 @@
             
             </ul>
         </div>
-    
+    </div>
     </div>
     <script src=js/modal.js></script>
  

@@ -259,6 +259,15 @@ ul {
   color: #fff;
   animation: flicker-text 1.5s infinite alternate;
 }
+.tabMenuCart h2 {
+  margin-top: 200px;
+  margin-left: 200px;
+  font-family: "Jua", sans-serif;
+  text-align: left;
+  font-size: 30px;
+  color: #fff;
+  animation: flicker-text 1.5s infinite alternate;
+}
 .tabimage li {
   float: left;
   width: 230px;
