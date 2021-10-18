@@ -30,7 +30,7 @@
 		// 「broadsocket」는 호스트 명
 		// WebSocket 오브젝트 생성 , 자동 onopen 접속
 		var webSocket = new WebSocket(
-		"ws://localhost:8080/BoardSite/broadsocket");
+		"ws://localhost:8080/Danta/chatSocket");
 		// 콘솔 텍스트 에리어 오브젝트
 		var messageTextArea = document.getElementById("messageTextArea");
 		// WebSocket 서버와 접속이 되면 호출되는 함수
