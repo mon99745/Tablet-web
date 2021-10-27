@@ -25,7 +25,7 @@
          <div class="login-page">
             <div class="form">
               <form class="login-form" action="chat.jsp" method="post">
-                <input type="text" name="id" placeholder="닉네임을 입력해주세요. ex) 테이블 번호"/>
+                <input type="text" name="id" placeholder="닉네임을 입력해주세요. ex) 테이블 번호">
                 <button type="submit">입장하기</button>
               </form>
             </div> <!--  form class end  -->

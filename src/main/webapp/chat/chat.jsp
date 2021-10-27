@@ -15,7 +15,7 @@
       
     <div id=middle> <!--가운데 레이아웃--> 
          <div class=middle-top>
-            <div class=logo href="/Danta/menu.jsp"> <!--단타포차 로고-->
+            <div class=logo href="../menu.jsp"> <!--단타포차 로고-->
                <button type="button" id="logo">
                    <a href="menu.jsp">Danta</a>
                </button>
@@ -36,7 +36,7 @@
 		// WebSocket 서버와 접속이 되면 호출되는 함수
 		webSocket.onopen = function(message) {
 			messageTextArea.value += "<< 서버와 연결이 완료 되었습니다. >>\n";
-			messageTextArea.value += "❗️지나친 욕설과 성희롱 관련의 폭언은 처벌의 대상이 될 수 있습니다❗"
+			messageTextArea.value += "❗️지나친 욕설과 성희롱 관련의 폭언은 처벌의 대상이 될 수 있습니다❗\n"
 		};
 		// WebSocket 서버와 접속이 끊기면 호출되는 함수
 		webSocket.onclose = function(message) {
@@ -56,7 +56,7 @@
 			var user = document.getElementById("user");
 			// 송신 메시지를 작성하는 텍스트 박스 오브젝트를 취득
 			var message = document.getElementById("textMessage");
-			messageTextArea.value += user.value + "(me) => " + message.value
+			messageTextArea.value += user.value + ":: " + message.value
 					+ "\n";
 			// WebSocket 서버에 메시지를 전송(형식 「{{유저명}}메시지」)
 			webSocket.send("[" + user.value + "]" + message.value);
@@ -69,10 +69,10 @@
 		}
 	</script>
 	<form>
-		<input id="user" type="text" value="name"> <!-- 유저명 박스 -->
+		<input id="user" type="text" value="닉네임"> <!-- 유저명 박스 -->
 		<input id="textMessage" type="text"> <!-- 메시지 박스 -->
 		<input onclick="sendMessage()" value="보내기" type="button"> <!-- 메시지 송신버튼 -->
-		<input onclick="disconnect()" value="연결해제" type="button"> <!-- 종료버튼 -->
+		<!-- <input onclick="disconnect()" value="연결해제" type="button"> 종료버튼 -->
 	</form>
 	</div>
 	<div id=right-sidebar> <!--오른쪽 사이드 레이아웃-->

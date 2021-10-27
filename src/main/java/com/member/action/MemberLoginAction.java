@@ -45,7 +45,7 @@ public class MemberLoginAction implements Action{
 			
 			ActionForward forward = new ActionForward();
 			//로그인 시 회원전용페이지로 이동 
-			forward.setPath("memberIndex.jsp");
+			forward.setPath("memberMenu.jsp");
 			forward.setRedirect(false);
 			return forward;
 			
