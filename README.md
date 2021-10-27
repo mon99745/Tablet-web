@@ -1,3 +1,3 @@
 # Danta
-![image](https://user-images.githubusercontent.com/84507123/139095381-1020516a-d09a-494b-a1ff-34f799c9432e.png) A new platform for drinking culture.
+![image](https://user-images.githubusercontent.com/84507123/139095689-ebe1fd51-56c0-43d4-be91-db0347c8de6b.png) A new platform for drinking culture.
 
