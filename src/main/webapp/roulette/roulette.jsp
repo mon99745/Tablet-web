@@ -6,11 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>단타포차에 오신걸 환영합니다.</title>
-    <link rel="stylesheet" href="./css/login.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/roulette.css">
-   <script type="text/javascript" src="./lib/jquery-3.2.0.min.js"></script>
-   <script type="text/javascript" src="./lib/jquery.color-2.1.2.min.js"></script>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/roulette.css">
+   <script type="text/javascript" src="../lib/jquery-3.2.0.min.js"></script>
+   <script type="text/javascript" src="../lib/jquery.color-2.1.2.min.js"></script>
 </head>
 
 <body>
@@ -45,7 +45,7 @@
             <div><span class="command">클릭</span><span class="number">±1</span></div>
          </div>
          <div id="result" style="display: none;">!!</div>
-         <script type="text/javascript" src="js/roulette.js"></script>
+         <script type="text/javascript" src="../js/roulette.js"></script>
          <script>
             document.getElementsByTagName('body')[0].removeAttribute('class');
          </script>

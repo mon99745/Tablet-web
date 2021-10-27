@@ -28,26 +28,27 @@
             <div class=left-list> <!--=왼쪽 사이드 메뉴 리스트-->
                     <ul>
                         <li>
-                            <button type="button" id=sidebar onclick="location.href='memberLogin.me'">
+                            <button type="button" id=sidebar onclick="location.href='../memberLogin.me'">
                               로그인
-                            </button>    
+                            </button>
+                        </li>  
                         <li>
-                            <button type="button" id="sidebar" onclick="location.href='cartOk.jsp'" >
+                            <button type="button" id="sidebar" onclick="location.href='../cart/cartOk.jsp'" >
                                 주문내역
                             </button>
                         </li>
                     	<li>
-							<button type="button" id="sidebar" onclick="location.href='/Danta/chat/chatForm.jsp'">
+							<button type="button" id="sidebar" onclick="location.href='../chat/chatForm.jsp'">
 								채팅
 							</button>
 						</li>
 						<li>
-							<button type="button" id="sidebar" onclick="location.href='songRequest.jsp'">
+							<button type="button" id="sidebar" onclick="location.href='../songRequest/songRequest.jsp'">
 								노래 신청
 							</button>
 						</li>
                         <li>
-                            <button type="button" id="sidebar" onclick="location.href='roulette.jsp'">
+                            <button type="button" id="sidebar" onclick="location.href='../roulette/roulette.jsp'">
 								룰렛
 							</button>
                             </li>
@@ -214,7 +215,7 @@
         </div>
     </div>
     </div>
-    <script src=js/modal.js></script>
+    <script src=../js/modal.js></script>
  
 </body>
 </html>

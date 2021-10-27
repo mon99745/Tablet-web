@@ -6,8 +6,8 @@
 <html lang =ko>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type = text/css href="css/style.css">
-<link rel="stylesheet" type = text/css href="css/cart.css">
+<link rel="stylesheet" type = text/css href="../css/style.css">
+<link rel="stylesheet" type = text/css href="../css/cart.css">
 <% int sum = 0;
 ArrayList list = (ArrayList) (session.getAttribute("list"));
 %>
