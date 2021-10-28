@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>단타포차에 오신걸 환영합니다.</title>
-    <link rel="stylesheet" type ="text/css" href="css/login.css">
-    <link rel="stylesheet" type ="text/css" href="css/style.css">
+    <link rel="stylesheet" type ="text/css" href="../css/login.css">
+    <link rel="stylesheet" type ="text/css" href="../css/style.css">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
          <div class=middle-top>
             <div class=logo href="menu.jsp"> <!--단타포차 로고-->
                <button type="button" id="logo">
-                   <a href="menu.jsp">Danta</a>
+                   <a href="../main/menu.jsp">Danta</a>
                </button>
            
                </div>
