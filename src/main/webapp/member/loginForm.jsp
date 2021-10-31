@@ -8,6 +8,7 @@
     <link rel="stylesheet" type ="text/css" href="../css/style.css">
 </head>
 
+
 <body>
    <div id=tablet> 
       <div id=left-sidebar> <!--왼쪽 사이드 레이아웃-->
