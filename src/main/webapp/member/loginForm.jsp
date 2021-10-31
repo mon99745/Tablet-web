@@ -12,9 +12,8 @@
    <div id=tablet> 
       <div id=left-sidebar> <!--왼쪽 사이드 레이아웃-->
          <button class="mainBtn" onClick="menu.jsp">HOME</button >
-         
       </div>
-
+	 
       <div id=middle> <!--가운데 레이아웃--> 
          <div class=middle-top>
             <div class=logo href="menu.jsp"> <!--단타포차 로고-->

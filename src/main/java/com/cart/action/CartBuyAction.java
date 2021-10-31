@@ -34,8 +34,10 @@ public class CartBuyAction extends HttpServlet {
 		response.setContentType("text/html; charset=utf-8");
 
 		PrintWriter out = response.getWriter();
-				
+		 
 		// session.invalidate(); // 해당 고객의 모든 세션 삭제
+		//response.sendRedirect("index.jsp"); //다른 페이지로 제어권 이동
+		
 		session.removeAttribute("list"); // 상품목록 세션 삭제
 		out.close();
 
