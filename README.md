@@ -1,7 +1,7 @@
-# Danta
+## Project name : Danta
 A new platform for drinking culture.
 
---  Updating. --
+# --  Updating. --
 
 I'll be back with good news.
 
