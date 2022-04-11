@@ -6,7 +6,7 @@ A new platform for drinking culture.
 
 ### Update detail
 
-- SSR : JSP -> Thyleaf
+- SSR : JSP -> Thymeleaf
 - IDE : Eclipse -> IntelliJ
 - +SPRING, SPRINGBOOT
 
