@@ -1,10 +1,13 @@
 ## Project name : Danta
 A new platform for drinking culture.
 
+##Version 2
+https://github.com/mon99745/Bar-menu-v2
 
-
-##  Updating
-- I'll be back with good news.
+### Update detail
+- SSR : JSP -> Thyleaf
+- IDE : Eclipse -> IntelliJ
+- + SPRING, SPRINGBOOT
 
 ![image](https://user-images.githubusercontent.com/84507123/150490207-a1d78786-1217-48ec-9ea0-3024b90f8ff2.png)
 
