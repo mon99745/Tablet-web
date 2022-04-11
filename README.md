@@ -1,7 +1,7 @@
 ## Project name : Danta
 A new platform for drinking culture.
 
-##Version 2
+## Version 2
 - https://github.com/mon99745/Bar-menu-v2
 
 ### Update detail
